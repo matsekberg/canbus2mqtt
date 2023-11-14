@@ -1,0 +1,2033 @@
+---- Opened the serial port /dev/tty.usbserial-10 ----
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:1344
+load:0x40078000,len:13964
+load:0x40080400,len:3600
+entry 0x400805f0
+[   163][I][mqtt_mapper.ino:109] setup(): [MM] Initializing mqttmpr...
+[  1167][I][mqtt_mapper.ino:120] setup(): [MM] Filesystem mounted
+[  1198][I][fileio.cpp:130] readMappings(): [FIO] forced subscription: 'mqttmapper/#'
+[  1209][I][fileio.cpp:130] readMappings(): [FIO] forced subscription: 'hasp/+/state/idle'
+[  1221][I][fileio.cpp:130] readMappings(): [FIO] forced subscription: 'hasp/driver/state/+'
+[  1273][I][fileio.cpp:170] readMappings(): [FIO] mapping 1: @421.01 | 1x 4f | ${10. /} | hasp/salon/command | p2b1.text=%.1f &deg; | salon p2: greywater temp
+[  1327][I][fileio.cpp:170] readMappings(): [FIO] mapping 2: @421.02 | 1x 4f | ${10. /} | hasp/truma/command | p0b1.text=%.1f &deg; | truma p*: outside temp
+[  1380][I][fileio.cpp:170] readMappings(): [FIO] mapping 3: ! | ! | ${!} | hasp/salon/command | p0b1.text=%.1f &deg; | salon p*: outside temp
+[  1432][I][fileio.cpp:170] readMappings(): [FIO] mapping 4: ! | ! | ${!} | hasp/driver/command | p0b1.text=%.1f &deg; | driver p*: outside temp
+[  1484][I][fileio.cpp:170] readMappings(): [FIO] mapping 5: @421.03 | 1x 4f | ${10. /} | hasp/truma/command | p2b4.text=%.1f &deg; | truma p2: bedroom temp
+[  1536][I][fileio.cpp:170] readMappings(): [FIO] mapping 6: ! | ! | ${!} | hasp/salon/command | p2b4.text=%.1f &deg; | salon p2: bedroom temp
+[  1588][I][fileio.cpp:170] readMappings(): [FIO] mapping 7: ! | ! | ${!} | hasp/driver/command | p4b4.text=%.1f | driver p4: bedroom temp
+[  1641][I][fileio.cpp:170] readMappings(): [FIO] mapping 8: @421.04 | 1x 4f | ${10. /} | hasp/truma/command | p2b2.text=%.1f &deg; | truma p2: garage temp
+[  1695][I][fileio.cpp:170] readMappings(): [FIO] mapping 9: ! | ! | ${!} | hasp/salon/command | p1b4.text=%.1f &deg; | salon p1: garage temp
+[  1748][I][fileio.cpp:170] readMappings(): [FIO] mapping 10: ! | ! | ${!} | hasp/salon/command | p2b2.text=%.1f &deg; | salon p2: garage temp
+[  1800][I][fileio.cpp:170] readMappings(): [FIO] mapping 11: ! | ! | ${!} | hasp/driver/command | p4b2.text=%.1f | driver p4: garage temp
+[  1853][I][fileio.cpp:170] readMappings(): [FIO] mapping 12: @421.05 | 1x 4f | ${10. /} | hasp/truma/command | p2b3.text=%.1f &deg; | truma p2: trumasensor temp
+[  1907][I][fileio.cpp:170] readMappings(): [FIO] mapping 13: ! | ! | ${!} | hasp/salon/command | p2b3.text=%.1f &deg; | salon p2: trumasensor temp
+[  1961][I][fileio.cpp:170] readMappings(): [FIO] mapping 14: @421.06 | 1x 4f | ${10. /} | hasp/driver/command | p4b1.text=%.1f | driver p4: fridge temp
+[  2014][I][fileio.cpp:170] readMappings(): [FIO] mapping 15: ! | ! | ${!} | hasp/salon/command | p1b6.text=%.1f &deg; | salon p1: fridge temp
+[  2067][I][fileio.cpp:170] readMappings(): [FIO] mapping 16: ! | ! | ${!} | hasp/salon/command | p2b8.text=%.1f &deg; | salon p2: fridge temp
+[  2119][I][fileio.cpp:170] readMappings(): [FIO] mapping 17: ! | ! | ${!} | hasp/truma/command | p2b1.text=%.1f &deg; | truma p2: fridge temp
+[  2173][I][fileio.cpp:170] readMappings(): [FIO] mapping 18: @421.07 | 1x 4f | ${10. / 0. 99.9 limit} | hasp/truma/command | p2b3.text=%.1f &deg; | truma p2: coolbox temp
+[  2228][I][fileio.cpp:170] readMappings(): [FIO] mapping 19: ! | ! | ${!} | hasp/salon/command | p1b3.text=%.1f &deg; | salon p1: coolbox temp
+[  2280][I][fileio.cpp:170] readMappings(): [FIO] mapping 20: ! | ! | ${!} | hasp/salon/command | p2b9.text=%.1f &deg; | salon p2: coolbox temp
+[  2333][I][fileio.cpp:170] readMappings(): [FIO] mapping 21: ! | ! | ${!} | hasp/driver/command | p4b3.text=%.1f | driver p4: coolbox temp
+[  2386][I][fileio.cpp:170] readMappings(): [FIO] mapping 22: @423.01 | 1x 4f | ${10. /} | hasp/truma/command | p2b5.text=%.1f &deg; | truma p2: salon temp
+[  2440][I][fileio.cpp:170] readMappings(): [FIO] mapping 23: ! | ! | ${!} | hasp/salon/command | p1b5.text=%.1f &deg; | salon p1: salon temp
+[  2492][I][fileio.cpp:170] readMappings(): [FIO] mapping 24: ! | ! | ${!} | hasp/salon/command | p2b5.text=%.1f &deg; | salon p2: salon temp
+[  2544][I][fileio.cpp:170] readMappings(): [FIO] mapping 25: ! | ! | ${!} | hasp/driver/command | p4b5.text=%.1f | driver p4: salon temp
+[  2596][I][fileio.cpp:170] readMappings(): [FIO] mapping 26: @423.02 | 1x 4f | ${10. /} | hasp/truma/command | p2b6.text=%.1f &deg; | truma p2: cockpit temp
+[  2650][I][fileio.cpp:170] readMappings(): [FIO] mapping 27: ! | ! | ${!} | hasp/salon/command | p2b7.text=%.1f &deg; | salon p2: cockpit temp
+[  2703][I][fileio.cpp:170] readMappings(): [FIO] mapping 28: @423.03 | 1x 4f | ${10. /} | hasp/salon/command | p2b6.text=%.1f &deg; | salon p2: victron temp
+[  2757][I][fileio.cpp:170] readMappings(): [FIO] mapping 29: ! | ! | ${!} | hasp/driver/command | p4b6.text=%.1f | driver p4: victron temp
+[  2807][I][fileio.cpp:170] readMappings(): [FIO] mapping 30: @4A3.12 | 1x 2 | ${0 100 limit} | hasp/salon/command | p1b2.value_str=%d &percnt; | salon p1: water level value text
+[  2863][I][fileio.cpp:170] readMappings(): [FIO] mapping 31: ! | ! | ${!} | hasp/salon/command | p1b2.val=%d | salon p1: water level gauge
+[  2917][I][fileio.cpp:170] readMappings(): [FIO] mapping 32: ! | ! | ${!} | hasp/truma/command | p1b2.value_str=%d &percnt; | truma p1: water level gauge text
+[  2971][I][fileio.cpp:170] readMappings(): [FIO] mapping 33: ! | ! | ${!} | hasp/truma/command | p1b2.val=%d | truma p1: water level gauge
+[  3022][I][fileio.cpp:170] readMappings(): [FIO] mapping 34: ! | ! | ${!} | cal/water/percent | %d | calibration: water level %
+[  3074][I][fileio.cpp:170] readMappings(): [FIO] mapping 35: ! | ! | ${20 - "#ff0000" "#000000" if<0} | hasp/salon/command | p1b2.bg_color10=%s | salon p1: water level gauge color
+[  3130][I][fileio.cpp:170] readMappings(): [FIO] mapping 36: @433.55 | 1x 2 | ${} | cal/water/raw | %d | calibration: water level raw
+[  3182][I][fileio.cpp:170] readMappings(): [FIO] mapping 37: @47A.10 | 1x 4f | ${10. /} | hasp/salon/command | p3b11.text=%.0f &percnt; | salon p3: SOC
+[  3235][I][fileio.cpp:170] readMappings(): [FIO] mapping 38: ! | ! | ${!} | hasp/driver/command | p1b1.value_str=%.0f | truma p1: SOC
+[  3286][I][fileio.cpp:170] readMappings(): [FIO] mapping 39: ! | ! | ${!} | hasp/driver/command | p1b1.val=%.0f | truma p1: SOC gauge
+[  3339][I][fileio.cpp:170] readMappings(): [FIO] mapping 40: @44A.10 | 1x 4f | ${1000. / abs log_6_100} | hasp/salon/command | p3b12.val=%.0f | salon p3: m current bar
+[  3394][I][fileio.cpp:170] readMappings(): [FIO] mapping 41: ! | ! | ${"#ff0000" "#00ff00" if<0} | hasp/salon/command | p3b12.bg_color10=%s | salon p3: m current bar color
+[  3448][I][fileio.cpp:170] readMappings(): [FIO] mapping 42: ! | ! | ${1000. /} | hasp/salon/command | p3b13.text=%.2f A | salon p3: m current
+[  3501][I][fileio.cpp:170] readMappings(): [FIO] mapping 43: ! | ! | ${1000. / -1. 59940. repl 60. / abs} | hasp/salon/command | p3b14.text=%.0f h | salon p3: m time-to-go hours text
+[  3557][I][fileio.cpp:170] readMappings(): [FIO] mapping 44: ! | ! | ${1000. /} | hasp/driver/command | p1b3.text=%.2f A | driver p1: m current
+[  3611][I][fileio.cpp:170] readMappings(): [FIO] mapping 45: ! | ! | ${1000. / -1. 59940. repl 60. / abs} | hasp/driver/command | p1b4.text=%.0f h | driver p1: m time-to-go hours
+[  3666][I][fileio.cpp:170] readMappings(): [FIO] mapping 46: @48A.10 | 1x 4f | ${60. /} | hasp/driver/command | p1b4.text=%.0f h | driver p1: m time-to-go hours
+[  3720][I][fileio.cpp:170] readMappings(): [FIO] mapping 47: @43A.10 | 1x 4f | ${1000. /} | hasp/salon/command | p3b10.text=%.2f V | salon p3: volt
+[  3773][I][fileio.cpp:170] readMappings(): [FIO] mapping 48: ! | ! | ${1000. / 11. 14.5 0. 100. scale} | hasp/salon/command | p3b9.val=%.0f | salon p3: volt bar
+[  3827][I][fileio.cpp:170] readMappings(): [FIO] mapping 49: ! | ! | ${1000. /} | hasp/driver/command | p1b2.text=%.2f V | driver p1: volt
+[  3880][I][fileio.cpp:170] readMappings(): [FIO] mapping 50: @47B.10 | 1x 4f | ${10. /} | hasp/salon/command | p1b1.value_str=%.0f &percnt; | salon p1: SOC
+[  3932][I][fileio.cpp:170] readMappings(): [FIO] mapping 51: ! | ! | ${!} | hasp/salon/command | p1b1.val=%.0f | salon p1: SOC gauge
+[  3983][I][fileio.cpp:170] readMappings(): [FIO] mapping 52: ! | ! | ${!} | hasp/salon/command | p3b4.text=%.0f &percnt; | salon p3: SOC
+[  4035][I][fileio.cpp:170] readMappings(): [FIO] mapping 53: ! | ! | ${!} | hasp/truma/command | p1b1.value_str=%.0f &percnt; | truma p1: SOC
+[  4086][I][fileio.cpp:170] readMappings(): [FIO] mapping 54: ! | ! | ${!} | hasp/truma/command | p1b1.val=%.0f | truma p1: SOC gauge
+[  4138][I][fileio.cpp:170] readMappings(): [FIO] mapping 55: ! | ! | ${!} | hasp/driver/command | p2b1.value_str=%.0f | truma p2: SOC
+[  4188][I][fileio.cpp:170] readMappings(): [FIO] mapping 56: ! | ! | ${!} | hasp/driver/command | p2b1.val=%.0f | truma p2: SOC gauge
+[  4241][I][fileio.cpp:170] readMappings(): [FIO] mapping 57: ! | ! | ${200. - "#ff0000" "#000000" if<0} | hasp/salon/command | p1b1.bg_color10=%s | salon p1: SOC gauge color
+[  4296][I][fileio.cpp:170] readMappings(): [FIO] mapping 58: @44B.10 | 1x 4f | ${1000. / abs log_6_100} | hasp/salon/command | p3b5.val=%.0f | salon p3: b current bar
+[  4351][I][fileio.cpp:170] readMappings(): [FIO] mapping 59: ! | ! | ${"#ff0000" "#00ff00" if<0} | hasp/salon/command | p3b5.bg_color10=%s | salon p3: b current bar color
+[  4405][I][fileio.cpp:170] readMappings(): [FIO] mapping 60: ! | ! | ${1000. /} | hasp/salon/command | p3b6.text=%.2f A | salon p3: b current text
+[  4459][I][fileio.cpp:170] readMappings(): [FIO] mapping 61: ! | ! | ${1000. /} | hasp/driver/command | p2b3.text=%.2f A | driver p2: m current
+[  4512][I][fileio.cpp:170] readMappings(): [FIO] mapping 62: @48B.10 | 1x 4f | ${60. /} | hasp/driver/command | p2b4.text=%.0f h | driver p2: m time-to-go hours
+[  4566][I][fileio.cpp:170] readMappings(): [FIO] mapping 63: ! | ! | ${!} | hasp/salon/command | p3b7.text=%.0f h | salon p3: m time-to-go hours
+[  4618][I][fileio.cpp:170] readMappings(): [FIO] mapping 64: @43B.10 | 1x 4f | ${1000. /} | hasp/salon/command | p3b3.text=%.2f V | salon p3: volt text
+[  4672][I][fileio.cpp:170] readMappings(): [FIO] mapping 65: ! | ! | ${1000. / 11.25 14.25 0. 100. scale} | hasp/salon/command | p3b2.val=%.0f | salon p3: volt bar
+[  4727][I][fileio.cpp:170] readMappings(): [FIO] mapping 66: ! | ! | ${1000. /} | hasp/driver/command | p2b2.text=%.2f V | driver p2: volt
+[  4779][I][fileio.cpp:170] readMappings(): [FIO] mapping 67: @45C.30 | 1x 4f | ${} | hasp/salon/command | p1b7.text=%.0f W | salon p1: solar power
+[  4832][I][fileio.cpp:170] readMappings(): [FIO] mapping 68: ! | ! | ${} | hasp/salon/command | p3b17.value_str=%.0f W | salon p3: panel power gauge text
+[  4884][I][fileio.cpp:170] readMappings(): [FIO] mapping 69: ! | ! | ${} | hasp/driver/command | p3b1.value_str=%.0f | driver p3: panel power text
+[  4937][I][fileio.cpp:170] readMappings(): [FIO] mapping 70: ! | ! | ${0. 250. 0. 100. scale} | hasp/salon/command | p3b17.val=%.0f | salon p3: panel power gauge
+[  4990][I][fileio.cpp:170] readMappings(): [FIO] mapping 71: ! | ! | ${!} | hasp/driver/command | p3b1.val=%.0f | driver p3: panel power gauge
+[  5043][I][fileio.cpp:170] readMappings(): [FIO] mapping 72: @46C.30 | 1x 4f | ${10. *} | hasp/driver/command | p3b4.text=%.0f Wh | driver p3: solar energy today
+[  5096][I][fileio.cpp:170] readMappings(): [FIO] mapping 73: ! | ! | ${!} | hasp/salon/command | p3b18.text=%.0f Wh | salon p3: solar energy today
+[  5149][I][fileio.cpp:170] readMappings(): [FIO] mapping 74: @46C.32 | 1x 4f | ${10. *} | hasp/salon/command | p3b20.text=%.0f Wh | driver p3: solar energy yesterday
+[  5203][I][fileio.cpp:170] readMappings(): [FIO] mapping 75: @45C.31 | 1x 4f | ${} | hasp/salon/command | p3b19.text=%.0f W | salon p3: solar max power today
+[  5257][I][fileio.cpp:170] readMappings(): [FIO] mapping 76: @43C.30 | 1x 4f | ${1000. /} | hasp/driver/command | p3b2.text=%.1f V | driver p3: solar panel voltage
+[  5310][I][fileio.cpp:170] readMappings(): [FIO] mapping 77: ! | ! | ${!} | hasp/salon/command | p3b15.value_str=%.1f V | salon p3: panel voltage gauge text
+[  5364][I][fileio.cpp:170] readMappings(): [FIO] mapping 78: ! | ! | ${0. 50. 0. 100. scale} | hasp/salon/command | p3b15.val=%.0f | salon p3: panel voltage gauge
+[  5418][I][fileio.cpp:170] readMappings(): [FIO] mapping 79: @44C.10 | 1x 4f | ${1000. /} | hasp/driver/command | p3b3.text=%.2f A | driver p3: battery current
+[  5472][I][fileio.cpp:170] readMappings(): [FIO] mapping 80: ! | ! | ${!} | hasp/salon/command | p3b16.value_str=%.1f A | salon p3: battery current gauge text
+[  5526][I][fileio.cpp:170] readMappings(): [FIO] mapping 81: ! | ! | ${0. 10. 0. 100. scale} | hasp/salon/command | p3b16.val=%.0f | salon p3: battery current gauge
+[  5580][I][fileio.cpp:170] readMappings(): [FIO] mapping 82: @4FC.F0 | 1x 1 | ${} | hasp/salon/command | p1b8.text=%d | salon p1: solar status
+[  5634][I][fileio.cpp:170] readMappings(): [FIO] mapping 83: mqttmapper/time | %s | ${} | hasp/salon/command | p0b3.text=%.5s | salon p*: time
+[  5685][I][fileio.cpp:170] readMappings(): [FIO] mapping 84: ! | ! | ${} | hasp/truma/command | p0b3.text=%.5s | truma p*: time
+[  5735][I][fileio.cpp:170] readMappings(): [FIO] mapping 85: ! | ! | ${} | hasp/driver/command | p0b3.text=%.5s | driver p*: time
+[  5791][I][fileio.cpp:170] readMappings(): [FIO] mapping 86: hasp/truma/state/idle | %s | ${"short" neq quit} | hasp/truma/command/backlight | 120 | driver: dim
+[  5845][I][fileio.cpp:170] readMappings(): [FIO] mapping 87: ! | ! | ${"long" neq quit} | hasp/truma/command/backlight | 40 | driver: dim
+[  5897][I][fileio.cpp:170] readMappings(): [FIO] mapping 88: ! | ! | ${"off" neq quit} | hasp/truma/command/backlight | 255 | driver: dim
+[  5949][I][fileio.cpp:170] readMappings(): [FIO] mapping 89: hasp/salon/state/idle | %s | ${"short" neq quit} | hasp/salon/command/backlight | 120 | driver: dim
+[  6003][I][fileio.cpp:170] readMappings(): [FIO] mapping 90: ! | ! | ${"long" neq quit} | hasp/salon/command/backlight | 40 | driver: dim
+[  6055][I][fileio.cpp:170] readMappings(): [FIO] mapping 91: ! | ! | ${"off" neq quit} | hasp/salon/command/backlight | 255 | driver: dim
+[  6107][I][fileio.cpp:170] readMappings(): [FIO] mapping 92: hasp/driver/state/p5b5 | {val} {event} | ${"up" neq quit} | @351.81 | %d | action hb1.rly1
+[  6160][I][fileio.cpp:170] readMappings(): [FIO] mapping 93: hasp/driver/state/p5b6 | {val} {event} | ${"up" neq quit} | @351.82 | %d | action hb1.rly2
+[  6213][I][fileio.cpp:170] readMappings(): [FIO] mapping 94: hasp/driver/state/p5b7 | {val} {event} | ${"up" neq quit} | @353.81 | %d | action hb3.rly1
+[  6267][I][fileio.cpp:170] readMappings(): [FIO] mapping 95: hasp/driver/state/p5b8 | {val} {event} | ${"up" neq quit} | @353.82 | %d | action hb3.rly2
+[  6321][I][fileio.cpp:170] readMappings(): [FIO] mapping 96: @351.01 | 1x 1 | ${128 * 96 +} | hasp/driver/command | p5b9.val=%d | driver p5: upd led for hb1.rly1
+[  6375][I][fileio.cpp:170] readMappings(): [FIO] mapping 97: ! | ! | ${} | hasp/driver/command | p5b5.val=%d | driver p5: upd switch for hb1.rly1
+[  6428][I][fileio.cpp:170] readMappings(): [FIO] mapping 98: @351.02 | 1x 1 | ${128 * 96 +} | hasp/driver/command | p5b10.val=%d | driver p5: upd led for hb1.rly2
+[  6481][I][fileio.cpp:170] readMappings(): [FIO] mapping 99: ! | ! | ${} | hasp/driver/command | p5b6.val=%d | driver p5: upd switch for hb1.rly2
+[  6534][I][fileio.cpp:170] readMappings(): [FIO] mapping 100: @353.01 | 1x 1 | ${128 * 96 +} | hasp/driver/command | p5b11.val=%d | driver p5: upd led for hb3.rly1
+[  6588][I][fileio.cpp:170] readMappings(): [FIO] mapping 101: ! | ! | ${} | hasp/driver/command | p5b7.val=%d | driver p5: upd switch for hb3.rly1
+[  6641][I][fileio.cpp:170] readMappings(): [FIO] mapping 102: @353.02 | 1x 1 | ${128 * 96 +} | hasp/driver/command | p5b12.val=%d | driver p5: lupd ed for hb3.rly2
+[  6695][I][fileio.cpp:170] readMappings(): [FIO] mapping 103: ! | ! | ${} | hasp/driver/command | p5b8.val=%d | driver p5: upd switch for hb3.rly2
+[  6717][I][fileio.cpp:201] readCode(): [FIO] Read 5 lines of code
+[  6717][I][mqtt_mapper.ino:138] setup(): [MM] Connecting to husbil-2g
+..[  7901][I][mqtt_mapper.ino:148] setup(): [MM] mDNS responder started
+[  8940][I][mqtt.cpp:70] mqttEventHandler(): [MQT] Connected to MQTT broker
+[  9442][I][mqtt.cpp:129] subscribe(): [MQT] Subscribe to: mqttmapper/#
+[  9445][I][mqtt.cpp:129] subscribe(): [MQT] Subscribe to: hasp/+/state/idle
+[  9446][I][mqtt.cpp:129] subscribe(): [MQT] Subscribe to: hasp/driver/state/+
+[ 10424][I][ntp.cpp:49] ntp_begin(): [NTP] Initializing NTP
+[ 15324][I][ntp.cpp:18] printLocalTime(): [NTP] NTP time 11:15.36
+[ 15325][I][mapper.cpp:65] processMessagesTask(): [PRQ] processMessagesTask started
+[ 15324][I][ntp.cpp:30] handleNtpTask(): [NTP] handleNtpTask started
+[ 15333][I][mapper.cpp:104] publishMessagesTask(): [MPR] publishMessagesTask started
+[ 15340][I][mapper.cpp:141] processPingTask(): [PRQ] processPingTask started
+[ 15347][I][canbus.cpp:39] listenToCanTask(): [CAN] listenToCanTask started
+[ 15353][I][canbus.cpp:128] can_begin(): [CAN] CAN bus initialized successfully!
+[ 15661][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15661,43A,5,10,00,00,33,1D
+[ 15670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15670,44A,5,10,00,00,00,00
+[ 15680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15680,45A,5,10,00,00,00,00
+[ 15690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15690,47A,5,10,00,00,03,E8
+[ 15700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15700,48A,5,10,FF,FF,FF,FF
+[ 15793][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15793,4A3,3,12,00,39
+[ 15807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15807,353,2,01,00
+[ 15807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15807,353,2,02,00
+[ 15860][I][mapper.cpp:223] mapper_begin(): [MPR] Mapper running
+[ 15912][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15912,43C,5,10,00,00,35,CA
+[ 15922][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15922,43C,5,30,00,00,92,A4
+[ 15932][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15932,45C,5,30,00,00,00,10
+[ 15942][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15942,44C,5,10,00,00,04,42
+[ 15952][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15952,46C,5,30,00,00,00,03
+[ 15962][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15962,45C,5,31,00,00,00,13
+[ 15972][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15972,46C,5,32,00,00,00,12
+[ 15982][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15982,45C,5,33,00,00,00,3D
+[ 15992][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 15992,4FC,2,F0,03
+[ 16173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16173,433,3,55,09,83
+[ 16206][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16206,43B,5,10,00,00,35,DB
+[ 16215][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16215,44B,5,10,00,00,00,00
+[ 16225][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16225,47B,5,10,00,00,03,DB
+[ 16235][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16235,48B,5,10,FF,FF,FF,FF
+[ 16360][I][mqtt_mapper.ino:233] setup(): [MM] Setup done
+[ 16661][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16661,43A,5,10,00,00,33,1B
+[ 16670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16670,44A,5,10,00,00,00,00
+[ 16680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16680,45A,5,10,00,00,00,00
+[ 16690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16690,47A,5,10,00,00,03,E8
+[ 16700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16700,48A,5,10,FF,FF,FF,FF
+[ 16910][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16910,43C,5,10,00,00,35,D4
+[ 16919][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16919,43C,5,30,00,00,97,F4
+[ 16929][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16929,45C,5,30,00,00,00,0F
+[ 16939][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16939,44C,5,10,00,00,04,1A
+[ 16949][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16949,46C,5,30,00,00,00,03
+[ 16959][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16959,45C,5,31,00,00,00,13
+[ 16969][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16969,46C,5,32,00,00,00,12
+[ 16979][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16979,45C,5,33,00,00,00,3D
+[ 16989][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 16989,4FC,2,F0,03
+[ 17199][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17199,43B,5,10,00,00,35,DB
+[ 17209][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17209,44B,5,10,00,00,00,00
+[ 17219][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17219,45B,5,10,00,00,00,00
+[ 17229][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17229,47B,5,10,00,00,03,DB
+[ 17239][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17239,48B,5,10,FF,FF,FF,FF
+[ 17259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17259,351,2,01,01
+[ 17269][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17269,351,2,02,01
+[ 17355][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 17355][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 17356][W][mapper.cpp:85] processMessagesTask(): [PRQ] Stack change 6576 -> 5600, heap 29976
+[ 17364][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 17370][I][mapper.cpp:308] mapper_do(): [MPR] init -> 6 mS
+[ 17376][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 17382][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 17387][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 17393][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 17398][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:15' (salon p*: time)
+[ 17408][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 17413][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 17419][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 17425][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 17430][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 17436][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:15' (truma p*: time)
+[ 17445][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 17451][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 17457][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 17462][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 17467][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 17473][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:15' (driver p*: time)
+[ 17483][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 17488][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 17494][W][mapper.cpp:85] processMessagesTask(): [PRQ] Stack change 5600 -> 5452, heap 32316
+[ 17661][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17661,43A,5,10,00,00,33,1D
+[ 17670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17670,44A,5,10,00,00,00,00
+[ 17680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17680,45A,5,10,00,00,00,00
+[ 17690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17690,47A,5,10,00,00,03,E8
+[ 17700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17700,48A,5,10,FF,FF,FF,FF
+[ 17793][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17793,4A3,3,12,00,39
+[ 17807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17807,353,2,01,00
+[ 17807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17807,353,2,02,00
+[ 17907][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17907,43C,5,10,00,00,35,CA
+[ 17917][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17917,43C,5,30,00,00,97,FE
+[ 17927][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17927,45C,5,30,00,00,00,0F
+[ 17937][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17937,44C,5,10,00,00,04,1A
+[ 17947][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17947,46C,5,30,00,00,00,03
+[ 17957][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17957,45C,5,31,00,00,00,13
+[ 17967][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17967,46C,5,32,00,00,00,12
+[ 17977][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17977,45C,5,33,00,00,00,3D
+[ 17987][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 17987,4FC,2,F0,03
+[ 18192][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18192,43B,5,10,00,00,35,DC
+[ 18202][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18202,44B,5,10,00,00,00,00
+[ 18212][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18212,45B,5,10,00,00,00,00
+[ 18222][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18222,47B,5,10,00,00,03,DB
+[ 18232][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18232,48B,5,10,FF,FF,FF,FF
+[ 18532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18532,421,5,02,00,00,00,46
+[ 18555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18555,421,5,01,00,00,00,49
+[ 18578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18578,421,5,07,7F,FF,FF,FF
+[ 18601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18601,421,5,05,00,00,00,71
+[ 18623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18623,421,5,06,00,00,00,09
+[ 18646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18646,421,5,03,00,00,00,65
+[ 18661][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18661,43A,5,10,00,00,33,1D
+[ 18669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18669,421,5,04,00,00,00,57
+[ 18670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18670,44A,5,10,00,00,00,00
+[ 18680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18680,45A,5,10,00,00,00,00
+[ 18690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18690,47A,5,10,00,00,03,E8
+[ 18700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18700,48A,5,10,FF,FF,FF,FF
+[ 18905][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18905,43C,5,10,00,00,35,D4
+[ 18915][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18915,43C,5,30,00,00,93,58
+[ 18925][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18925,45C,5,30,00,00,00,10
+[ 18935][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18935,44C,5,10,00,00,04,56
+[ 18945][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18945,46C,5,30,00,00,00,03
+[ 18955][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18955,45C,5,31,00,00,00,13
+[ 18962][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18962,423,5,01,00,00,00,5C
+[ 18965][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18965,46C,5,32,00,00,00,12
+[ 18975][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18975,45C,5,33,00,00,00,3D
+[ 18976][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18976,423,5,02,00,00,00,5F
+[ 18985][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 18985,4FC,2,F0,03
+[ 19186][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19186,43B,5,10,00,00,35,DB
+[ 19195][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19195,44B,5,10,00,00,00,00
+[ 19205][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19205,45B,5,10,00,00,00,00
+[ 19215][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19215,47B,5,10,00,00,03,DB
+[ 19225][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19225,48B,5,10,FF,FF,FF,FF
+[ 19251][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19251,351,2,01,01
+[ 19261][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19261,351,2,02,01
+[ 19336][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19336,423,5,03,00,00,00,4E
+[ 19356][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 19357][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 19661][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19661,43A,5,10,00,00,33,1D
+[ 19670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19670,44A,5,10,00,00,00,00
+[ 19680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19680,45A,5,10,00,00,00,00
+[ 19690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19690,47A,5,10,00,00,03,E8
+[ 19700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19700,48A,5,10,FF,FF,FF,FF
+[ 19795][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19795,4A3,3,12,00,39
+[ 19807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19807,353,2,01,00
+[ 19807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19807,353,2,02,00
+[ 19903][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19903,43C,5,10,00,00,35,D4
+[ 19912][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19912,43C,5,30,00,00,86,E2
+[ 19922][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19922,45C,5,30,00,00,00,10
+[ 19932][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19932,44C,5,10,00,00,04,60
+[ 19942][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19942,46C,5,30,00,00,00,03
+[ 19952][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19952,45C,5,31,00,00,00,13
+[ 19962][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19962,46C,5,32,00,00,00,12
+[ 19972][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19972,45C,5,33,00,00,00,3D
+[ 19982][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 19982,4FC,2,F0,03
+[ 20657][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20657,43B,5,10,00,00,35,DA
+[ 20667][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20667,44B,5,10,00,00,00,00
+[ 20677][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20677,45B,5,10,00,00,00,00
+[ 20687][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20687,47B,5,10,00,00,03,DB
+[ 20697][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20697,48B,5,10,FF,FF,FF,FF
+[ 20901][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20901,43C,5,10,00,00,35,D4
+[ 20910][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20910,43C,5,30,00,00,88,D6
+[ 20920][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20920,45C,5,30,00,00,00,10
+[ 20930][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20930,44C,5,10,00,00,04,74
+[ 20940][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20940,46C,5,30,00,00,00,03
+[ 20950][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20950,45C,5,31,00,00,00,13
+[ 20960][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20960,46C,5,32,00,00,00,12
+[ 20970][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20970,45C,5,33,00,00,00,3D
+[ 20980][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 20980,4FC,2,F0,03
+[ 21169][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21169,43A,5,10,00,00,33,1D
+[ 21178][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21178,47A,5,10,00,00,03,E8
+[ 21179][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21179,433,3,55,09,83
+[ 21188][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21188,48A,5,10,FF,FF,FF,FF
+[ 21249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21249,351,2,01,01
+[ 21259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21259,351,2,02,01
+[ 21359][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 21359][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 21362][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 21366][I][mapper.cpp:308] mapper_do(): [MPR] init -> 4 mS
+[ 21371][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 1 mS
+[ 21377][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 21383][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 21388][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 21394][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:15' (salon p*: time)
+[ 21404][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 21409][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 21415][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 21420][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 21426][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 21432][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:15' (truma p*: time)
+[ 21441][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 21446][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 21452][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 21458][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 21463][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 21469][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:15' (driver p*: time)
+[ 21478][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 21484][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 21489][W][mapper.cpp:85] processMessagesTask(): [PRQ] Stack change 5452 -> 5324, heap 32136
+[ 21492][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21492,491,5,10,00,0B,B7,3A
+[ 21660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21660,43A,5,10,00,00,33,1C
+[ 21670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21670,44A,5,10,00,00,00,00
+[ 21680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21680,45A,5,10,00,00,00,00
+[ 21690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21690,47A,5,10,00,00,03,E8
+[ 21700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21700,48A,5,10,FF,FF,FF,FF
+[ 21790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21790,4A3,3,12,00,39
+[ 21807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21807,353,2,01,00
+[ 21807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21807,353,2,02,00
+[ 21898][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21898,43C,5,10,00,00,35,D4
+[ 21908][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21908,43C,5,30,00,00,7E,4A
+[ 21918][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21918,45C,5,30,00,00,00,10
+[ 21928][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21928,44C,5,10,00,00,04,24
+[ 21938][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21938,46C,5,30,00,00,00,03
+[ 21948][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21948,45C,5,31,00,00,00,13
+[ 21958][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21958,46C,5,32,00,00,00,12
+[ 21968][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21968,45C,5,33,00,00,00,3D
+[ 21978][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 21978,4FC,2,F0,03
+[ 22532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22532,421,5,01,00,00,00,49
+[ 22555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22555,421,5,02,00,00,00,46
+[ 22578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22578,421,5,07,7F,FF,FF,FF
+[ 22601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22600,421,5,03,00,00,00,65
+[ 22623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22623,421,5,05,00,00,00,71
+[ 22642][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22642,43B,5,10,00,00,35,D9
+[ 22646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22646,421,5,06,00,00,00,09
+[ 22651][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22651,44B,5,10,00,00,00,00
+[ 22661][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22661,45B,5,10,00,00,00,00
+[ 22669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22669,421,5,04,00,00,00,57
+[ 22671][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22671,47B,5,10,00,00,03,DB
+[ 22681][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22681,48B,5,10,FF,FF,FF,FF
+[ 22896][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22896,43C,5,10,00,00,35,CA
+[ 22906][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22906,43C,5,30,00,00,8D,2C
+[ 22916][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22916,45C,5,30,00,00,00,10
+[ 22926][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22926,44C,5,10,00,00,04,4C
+[ 22936][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22936,46C,5,30,00,00,00,03
+[ 22946][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22946,45C,5,31,00,00,00,13
+[ 22956][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22956,46C,5,32,00,00,00,12
+[ 22958][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22958,423,5,01,00,00,00,5C
+[ 22966][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22966,45C,5,33,00,00,00,3D
+[ 22972][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22972,423,5,02,00,00,00,5F
+[ 22976][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 22976,4FC,2,F0,03
+[ 23256][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23256,351,2,01,01
+[ 23266][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23266,351,2,02,01
+[ 23335][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23335,423,5,03,00,00,00,4E
+[ 23361][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 23362][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 23635][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23635,43B,5,10,00,00,35,DB
+[ 23645][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23645,44B,5,10,00,00,00,00
+[ 23655][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23655,45B,5,10,00,00,00,00
+[ 23665][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23665,47B,5,10,00,00,03,DB
+[ 23675][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23675,48B,5,10,FF,FF,FF,FF
+[ 23794][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23794,4A3,3,12,00,39
+[ 23807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23807,353,2,01,00
+[ 23807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23807,353,2,02,00
+[ 23894][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23894,43C,5,10,00,00,35,CA
+[ 23903][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23903,43C,5,30,00,00,92,4A
+[ 23913][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23913,45C,5,30,00,00,00,10
+[ 23923][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23923,44C,5,10,00,00,04,60
+[ 23933][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23933,46C,5,30,00,00,00,03
+[ 23943][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23943,45C,5,31,00,00,00,13
+[ 23953][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23953,46C,5,32,00,00,00,12
+[ 23963][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23963,45C,5,33,00,00,00,3D
+[ 23973][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 23973,4FC,2,F0,03
+[ 24168][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24168,43A,5,10,00,00,33,1C
+[ 24178][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24178,44A,5,10,00,00,00,00
+[ 24188][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24188,45A,5,10,00,00,00,00
+[ 24198][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24198,47A,5,10,00,00,03,E8
+[ 24208][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24208,48A,5,10,FF,FF,FF,FF
+[ 24628][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24628,43B,5,10,00,00,35,DB
+[ 24638][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24638,44B,5,10,00,00,00,00
+[ 24648][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24648,45B,5,10,00,00,00,00
+[ 24658][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24658,47B,5,10,00,00,03,DB
+[ 24668][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 24668,48B,5,10,FF,FF,FF,FF
+[ 25168][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25168,43A,5,10,00,00,33,1E
+[ 25178][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25178,44A,5,10,00,00,00,00
+[ 25188][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25188,45A,5,10,00,00,00,00
+[ 25198][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25198,47A,5,10,00,00,03,E8
+[ 25208][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25208,48A,5,10,FF,FF,FF,FF
+[ 25249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25249,351,2,01,01
+[ 25259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25259,351,2,02,01
+[ 25364][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 25365][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 25372][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 25373][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 25377][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 25383][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 25389][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 25394][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 25400][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:15' (salon p*: time)
+[ 25409][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 25415][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 25421][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 25426][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 25432][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 25437][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:15' (truma p*: time)
+[ 25447][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 25452][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 25458][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 25463][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 25469][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 25475][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:15' (driver p*: time)
+[ 25484][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 25490][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 25621][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25621,43B,5,10,00,00,35,DA
+[ 25631][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25631,44B,5,10,00,00,00,00
+[ 25641][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25641,45B,5,10,00,00,00,00
+[ 25651][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25651,47B,5,10,00,00,03,DB
+[ 25661][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25661,48B,5,10,FF,FF,FF,FF
+[ 25790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25790,4A3,3,12,00,39
+[ 25807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25807,353,2,01,00
+[ 25807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25807,353,2,02,00
+[ 25889][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25889,43C,5,10,00,00,35,D4
+[ 25899][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25899,43C,5,30,00,00,97,0E
+[ 25909][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25909,45C,5,30,00,00,00,0F
+[ 25919][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25919,44C,5,10,00,00,04,38
+[ 25929][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25929,46C,5,30,00,00,00,03
+[ 25939][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25939,45C,5,31,00,00,00,13
+[ 25949][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25949,46C,5,32,00,00,00,12
+[ 25959][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25959,45C,5,33,00,00,00,3D
+[ 25969][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 25969,4FC,2,F0,03
+[ 26168][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26168,43A,5,10,00,00,33,1D
+[ 26173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26173,433,3,55,09,86
+[ 26177][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26177,44A,5,10,00,00,00,00
+[ 26187][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26187,45A,5,10,00,00,00,00
+[ 26197][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26197,47A,5,10,00,00,03,E8
+[ 26534][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26534,421,5,01,00,00,00,49
+[ 26557][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26557,421,5,02,00,00,00,46
+[ 26580][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26580,421,5,07,7F,FF,FF,FF
+[ 26603][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26603,421,5,03,00,00,00,65
+[ 26614][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26614,43B,5,10,00,00,35,DB
+[ 26624][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26624,44B,5,10,00,00,00,00
+[ 26625][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26625,421,5,05,00,00,00,71
+[ 26634][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26634,45B,5,10,00,00,00,00
+[ 26644][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26644,47B,5,10,00,00,03,DB
+[ 26648][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26648,421,5,06,00,00,00,09
+[ 26654][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26654,48B,5,10,FF,FF,FF,FF
+[ 26671][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26671,421,5,04,00,00,00,57
+[ 26887][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26887,43C,5,10,00,00,35,D4
+[ 26897][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26897,43C,5,30,00,00,8C,96
+[ 26907][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26907,45C,5,30,00,00,00,10
+[ 26917][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26917,44C,5,10,00,00,04,6A
+[ 26927][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26927,46C,5,30,00,00,00,03
+[ 26937][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26937,45C,5,31,00,00,00,13
+[ 26947][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26947,46C,5,32,00,00,00,12
+[ 26957][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26957,45C,5,33,00,00,00,3D
+[ 26963][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26963,423,5,01,00,00,00,5C
+[ 26967][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26967,4FC,2,F0,03
+[ 26977][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 26977,423,5,02,00,00,00,5F
+[ 27168][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27168,43A,5,10,00,00,33,1D
+[ 27177][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27177,44A,5,10,00,00,00,00
+[ 27187][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27187,45A,5,10,00,00,00,00
+[ 27249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27249,351,2,01,01
+[ 27259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27259,351,2,02,01
+[ 27334][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27334,423,5,03,00,00,00,4E
+[ 27366][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 27366][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 27608][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27608,43B,5,10,00,00,35,DC
+[ 27617][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27617,44B,5,10,00,00,00,00
+[ 27627][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27627,45B,5,10,00,00,00,00
+[ 27637][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27637,47B,5,10,00,00,03,DB
+[ 27647][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27647,48B,5,10,FF,FF,FF,FF
+[ 27793][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27793,4A3,3,12,00,3A
+[ 27807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27807,353,2,01,00
+[ 27807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27807,353,2,02,00
+[ 27885][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27885,43C,5,10,00,00,35,C0
+[ 27894][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27894,43C,5,30,00,00,8A,DE
+[ 27904][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27904,45C,5,30,00,00,00,10
+[ 27914][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27914,44C,5,10,00,00,04,4C
+[ 27924][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27924,46C,5,30,00,00,00,03
+[ 27934][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27934,45C,5,31,00,00,00,13
+[ 27944][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27944,46C,5,32,00,00,00,12
+[ 27954][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27954,45C,5,33,00,00,00,3D
+[ 27964][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 27964,4FC,2,F0,03
+[ 28168][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28168,43A,5,10,00,00,33,1E
+[ 28177][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28177,44A,5,10,00,00,00,00
+[ 28601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28601,43B,5,10,00,00,35,DA
+[ 28610][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28610,44B,5,10,00,00,00,00
+[ 28620][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28620,45B,5,10,00,00,00,00
+[ 28630][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28630,47B,5,10,00,00,03,DB
+[ 28640][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28640,48B,5,10,FF,FF,FF,FF
+[ 28883][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28883,43C,5,10,00,00,35,D4
+[ 28892][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28892,43C,5,30,00,00,91,F0
+[ 28902][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28902,45C,5,30,00,00,00,10
+[ 28912][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28912,44C,5,10,00,00,04,60
+[ 28922][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28922,46C,5,30,00,00,00,03
+[ 28932][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28932,45C,5,31,00,00,00,13
+[ 28942][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28942,46C,5,32,00,00,00,12
+[ 28952][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28952,45C,5,33,00,00,00,3D
+[ 28962][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 28962,4FC,2,F0,03
+[ 29251][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29251,351,2,01,01
+[ 29261][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29261,351,2,02,01
+[ 29376][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 29376][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 29379][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 29383][I][mapper.cpp:308] mapper_do(): [MPR] init -> 4 mS
+[ 29389][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 29395][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 29400][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 29406][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 29411][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:15' (salon p*: time)
+[ 29421][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 29426][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 29432][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 29438][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 29443][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 29449][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:15' (truma p*: time)
+[ 29458][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 29464][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 29470][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 29475][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 29480][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 29486][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:15' (driver p*: time)
+[ 29496][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 29501][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 29594][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29594,43B,5,10,00,00,35,DB
+[ 29603][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29603,44B,5,10,00,00,00,00
+[ 29613][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29613,45B,5,10,00,00,00,00
+[ 29623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29623,47B,5,10,00,00,03,DB
+[ 29633][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29633,48B,5,10,FF,FF,FF,FF
+[ 29790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29790,4A3,3,12,00,3A
+[ 29807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29807,353,2,01,00
+[ 29807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29807,353,2,02,00
+[ 29880][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29880,43C,5,10,00,00,35,D4
+[ 29890][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29890,43C,5,30,00,00,85,16
+[ 29900][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29900,45C,5,30,00,00,00,10
+[ 29910][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29910,44C,5,10,00,00,04,56
+[ 29920][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29920,46C,5,30,00,00,00,03
+[ 29930][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29930,45C,5,31,00,00,00,13
+[ 29940][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29940,46C,5,32,00,00,00,12
+[ 29950][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29950,45C,5,33,00,00,00,3D
+[ 29960][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 29960,4FC,2,F0,03
+[ 30260][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30260,493,5,10,00,51,94,9A
+[ 30536][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30536,421,5,01,00,00,00,49
+[ 30559][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30559,421,5,02,00,00,00,46
+[ 30582][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30582,421,5,07,7F,FF,FF,FF
+[ 30587][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30587,43B,5,10,00,00,35,D9
+[ 30596][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30596,44B,5,10,00,00,00,00
+[ 30605][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30605,421,5,03,00,00,00,65
+[ 30606][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30606,45B,5,10,00,00,00,00
+[ 30616][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30616,47B,5,10,00,00,03,DB
+[ 30626][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30626,48B,5,10,FF,FF,FF,FF
+[ 30627][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30627,421,5,05,00,00,00,71
+[ 30650][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30650,421,5,06,00,00,00,09
+[ 30673][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30673,421,5,04,00,00,00,57
+[ 30878][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30878,43C,5,10,00,00,35,D4
+[ 30888][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30888,43C,5,30,00,00,8C,00
+[ 30898][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30898,45C,5,30,00,00,00,10
+[ 30908][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30908,44C,5,10,00,00,04,6A
+[ 30918][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30918,46C,5,30,00,00,00,03
+[ 30928][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30928,45C,5,31,00,00,00,13
+[ 30938][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30938,46C,5,32,00,00,00,12
+[ 30948][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30948,45C,5,33,00,00,00,3D
+[ 30954][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30954,423,5,01,00,00,00,5C
+[ 30958][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30958,4FC,2,F0,03
+[ 30968][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 30968,423,5,02,00,00,00,60
+[ 31173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31173,433,3,55,09,85
+[ 31249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31249,351,2,01,01
+[ 31259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31259,351,2,02,01
+[ 31329][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31329,423,5,03,00,00,00,4E
+[ 31371][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 31372][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 31580][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31580,43B,5,10,00,00,35,DA
+[ 31590][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31590,44B,5,10,00,00,00,00
+[ 31600][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31600,45B,5,10,00,00,00,00
+[ 31610][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31610,47B,5,10,00,00,03,DB
+[ 31620][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31620,48B,5,10,FF,FF,FF,FF
+[ 31790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31790,4A3,3,12,00,39
+[ 31807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31807,353,2,01,00
+[ 31807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31807,353,2,02,00
+[ 31876][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31876,43C,5,10,00,00,35,C0
+[ 31886][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31886,43C,5,30,00,00,96,32
+[ 31896][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31896,45C,5,30,00,00,00,10
+[ 31906][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31906,44C,5,10,00,00,04,38
+[ 31916][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31916,46C,5,30,00,00,00,03
+[ 31926][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31926,45C,5,31,00,00,00,13
+[ 31936][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31936,46C,5,32,00,00,00,12
+[ 31946][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31946,45C,5,33,00,00,00,3D
+[ 31956][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 31956,4FC,2,F0,03
+[ 32573][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32573,43B,5,10,00,00,35,DA
+[ 32583][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32583,44B,5,10,00,00,00,00
+[ 32593][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32593,45B,5,10,00,00,00,00
+[ 32603][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32603,47B,5,10,00,00,03,DB
+[ 32613][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32613,48B,5,10,FF,FF,FF,FF
+[ 32874][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32874,43C,5,10,00,00,35,D4
+[ 32883][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32883,43C,5,30,00,00,8C,DC
+[ 32893][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32893,45C,5,30,00,00,00,10
+[ 32903][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32903,44C,5,10,00,00,04,60
+[ 32913][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32913,46C,5,30,00,00,00,03
+[ 32923][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32923,45C,5,31,00,00,00,13
+[ 32933][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32933,46C,5,32,00,00,00,12
+[ 32943][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32943,45C,5,33,00,00,00,3D
+[ 32953][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 32953,4FC,2,F0,03
+[ 33249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33249,351,2,01,01
+[ 33259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33259,351,2,02,01
+[ 33377][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 33378][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 33380][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 33385][I][mapper.cpp:308] mapper_do(): [MPR] init -> 5 mS
+[ 33390][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 33396][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 33402][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 33407][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 33413][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:15' (salon p*: time)
+[ 33422][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 33428][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 33434][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 33439][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 33445][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 33450][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:15' (truma p*: time)
+[ 33460][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 33465][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 33471][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 33476][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 33482][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 33488][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:15' (driver p*: time)
+[ 33497][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 33503][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 33508][W][mapper.cpp:85] processMessagesTask(): [PRQ] Stack change 5324 -> 5292, heap 32136
+[ 33566][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33566,43B,5,10,00,00,35,DB
+[ 33576][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33576,44B,5,10,00,00,00,00
+[ 33586][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33586,45B,5,10,00,00,00,00
+[ 33596][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33596,47B,5,10,00,00,03,DB
+[ 33606][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33606,48B,5,10,FF,FF,FF,FF
+[ 33792][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33792,4A3,3,12,00,39
+[ 33807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33807,353,2,01,00
+[ 33807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33807,353,2,02,00
+[ 33871][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33871,43C,5,10,00,00,35,D4
+[ 33881][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33881,43C,5,30,00,00,83,E0
+[ 33891][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33891,45C,5,30,00,00,00,10
+[ 33901][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33901,44C,5,10,00,00,04,4C
+[ 33911][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33911,46C,5,30,00,00,00,03
+[ 33921][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33921,45C,5,31,00,00,00,13
+[ 33931][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33931,46C,5,32,00,00,00,12
+[ 33941][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33941,45C,5,33,00,00,00,3D
+[ 33951][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 33951,4FC,2,F0,03
+[ 34532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34532,421,5,01,00,00,00,49
+[ 34555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34555,421,5,02,00,00,00,46
+[ 34559][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34559,43B,5,10,00,00,35,DB
+[ 34569][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34569,44B,5,10,00,00,00,00
+[ 34578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34578,421,5,07,7F,FF,FF,FF
+[ 34579][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34579,45B,5,10,00,00,00,00
+[ 34589][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34589,47B,5,10,00,00,03,DB
+[ 34599][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34599,48B,5,10,FF,FF,FF,FF
+[ 34601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34601,421,5,03,00,00,00,66
+[ 34624][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34624,421,5,05,00,00,00,71
+[ 34646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34646,421,5,06,00,00,00,0A
+[ 34669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34669,421,5,04,00,00,00,57
+[ 34869][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34869,43C,5,10,00,00,35,CA
+[ 34879][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34879,43C,5,30,00,00,90,4C
+[ 34889][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34889,45C,5,30,00,00,00,10
+[ 34899][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34899,44C,5,10,00,00,04,4C
+[ 34909][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34909,46C,5,30,00,00,00,03
+[ 34919][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34919,45C,5,31,00,00,00,13
+[ 34929][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34929,46C,5,32,00,00,00,12
+[ 34939][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34939,45C,5,33,00,00,00,3D
+[ 34949][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34949,4FC,2,F0,03
+[ 34956][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34956,423,5,01,00,00,00,5C
+[ 34970][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 34970,423,5,02,00,00,00,5F
+[ 35250][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35250,351,2,01,01
+[ 35260][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35260,351,2,02,01
+[ 35331][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35331,423,5,03,00,00,00,4E
+[ 35379][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 35380][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 35553][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35553,43B,5,10,00,00,35,DB
+[ 35562][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35562,44B,5,10,00,00,00,00
+[ 35572][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35572,45B,5,10,00,00,00,00
+[ 35582][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35582,47B,5,10,00,00,03,DB
+[ 35592][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35592,48B,5,10,FF,FF,FF,FF
+[ 35790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35790,4A3,3,12,00,39
+[ 35807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35807,353,2,01,00
+[ 35807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35807,353,2,02,00
+[ 35867][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35867,43C,5,10,00,00,35,D4
+[ 35877][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35877,43C,5,30,00,00,96,1E
+[ 35887][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35887,45C,5,30,00,00,00,10
+[ 35897][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35897,44C,5,10,00,00,04,42
+[ 35907][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35907,46C,5,30,00,00,00,03
+[ 35917][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35917,45C,5,31,00,00,00,13
+[ 35927][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35927,46C,5,32,00,00,00,12
+[ 35937][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35937,45C,5,33,00,00,00,3D
+[ 35947][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 35947,4FC,2,F0,03
+[ 36173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36173,433,3,55,09,86
+[ 36490][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36490,491,5,10,00,0B,B7,49
+[ 36546][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36546,43B,5,10,00,00,35,DB
+[ 36555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36555,44B,5,10,00,00,00,00
+[ 36565][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36565,45B,5,10,00,00,00,00
+[ 36575][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36575,47B,5,10,00,00,03,DB
+[ 36585][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36585,48B,5,10,FF,FF,FF,FF
+[ 36865][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36865,43C,5,10,00,00,35,C0
+[ 36874][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36874,43C,5,30,00,00,8B,42
+[ 36884][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36884,45C,5,30,00,00,00,10
+[ 36894][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36894,44C,5,10,00,00,04,6A
+[ 36904][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36904,46C,5,30,00,00,00,03
+[ 36914][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36914,45C,5,31,00,00,00,13
+[ 36924][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36924,46C,5,32,00,00,00,12
+[ 36934][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36934,45C,5,33,00,00,00,3D
+[ 36944][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 36944,4FC,2,F0,03
+[ 37251][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37251,351,2,01,01
+[ 37261][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37261,351,2,02,01
+[ 37378][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 37378][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 37381][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 37386][I][mapper.cpp:308] mapper_do(): [MPR] init -> 5 mS
+[ 37391][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 37397][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 37402][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 37408][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 37414][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:15' (salon p*: time)
+[ 37423][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 37428][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 37434][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 37440][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 37445][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 37451][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:15' (truma p*: time)
+[ 37460][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 37466][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 37472][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 37477][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 37483][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 37488][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:15' (driver p*: time)
+[ 37498][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 37503][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 37539][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37539,43B,5,10,00,00,35,DB
+[ 37548][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37548,44B,5,10,00,00,00,00
+[ 37558][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37558,45B,5,10,00,00,00,00
+[ 37568][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37568,47B,5,10,00,00,03,DB
+[ 37578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37578,48B,5,10,FF,FF,FF,FF
+[ 37660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37660,43A,5,10,00,00,33,1D
+[ 37670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37670,44A,5,10,00,00,00,00
+[ 37680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37680,45A,5,10,00,00,00,00
+[ 37690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37690,47A,5,10,00,00,03,E8
+[ 37700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37700,48A,5,10,FF,FF,FF,FF
+[ 37794][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37794,4A3,3,12,00,3A
+[ 37807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37807,353,2,01,00
+[ 37807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37807,353,2,02,00
+[ 37863][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37863,43C,5,10,00,00,35,D4
+[ 37872][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37872,43C,5,30,00,00,83,18
+[ 37882][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37882,45C,5,30,00,00,00,10
+[ 37892][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37892,44C,5,10,00,00,04,42
+[ 37902][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37902,46C,5,30,00,00,00,03
+[ 37912][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37912,45C,5,31,00,00,00,13
+[ 37922][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37922,46C,5,32,00,00,00,12
+[ 37932][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37932,45C,5,33,00,00,00,3D
+[ 37942][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 37942,4FC,2,F0,03
+[ 38532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38532,43B,5,10,00,00,35,DB
+[ 38532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38532,421,5,01,00,00,00,4A
+[ 38542][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38542,44B,5,10,00,00,00,00
+[ 38552][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38552,45B,5,10,00,00,00,00
+[ 38555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38555,421,5,02,00,00,00,46
+[ 38562][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38562,47B,5,10,00,00,03,DB
+[ 38572][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38572,48B,5,10,FF,FF,FF,FF
+[ 38578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38578,421,5,07,7F,FF,FF,FF
+[ 38601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38600,421,5,03,00,00,00,65
+[ 38623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38623,421,5,05,00,00,00,71
+[ 38646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38646,421,5,06,00,00,00,09
+[ 38660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38660,43A,5,10,00,00,33,1C
+[ 38669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38669,421,5,04,00,00,00,57
+[ 38670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38670,44A,5,10,00,00,00,00
+[ 38680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38680,45A,5,10,00,00,00,00
+[ 38690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38690,47A,5,10,00,00,03,E8
+[ 38700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38700,48A,5,10,FF,FF,FF,FF
+[ 38860][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38860,43C,5,10,00,00,35,D4
+[ 38870][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38870,43C,5,30,00,00,90,BA
+[ 38880][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38880,45C,5,30,00,00,00,10
+[ 38890][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38890,44C,5,10,00,00,04,60
+[ 38900][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38900,46C,5,30,00,00,00,03
+[ 38910][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38910,45C,5,31,00,00,00,13
+[ 38920][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38920,46C,5,32,00,00,00,12
+[ 38930][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38930,45C,5,33,00,00,00,3D
+[ 38940][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38940,4FC,2,F0,03
+[ 38958][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38958,423,5,01,00,00,00,5C
+[ 38972][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 38972,423,5,02,00,00,00,5F
+[ 39250][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39250,351,2,01,01
+[ 39260][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39260,351,2,02,01
+[ 39334][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39334,423,5,03,00,00,00,4E
+[ 39381][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 39381][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 39525][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39525,43B,5,10,00,00,35,DC
+[ 39535][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39535,44B,5,10,00,00,00,00
+[ 39545][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39545,45B,5,10,00,00,00,00
+[ 39555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39555,47B,5,10,00,00,03,DB
+[ 39565][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39565,48B,5,10,FF,FF,FF,FF
+[ 39660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39660,43A,5,10,00,00,33,1D
+[ 39670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39670,44A,5,10,00,00,00,00
+[ 39680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39680,45A,5,10,00,00,00,00
+[ 39690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39690,47A,5,10,00,00,03,E8
+[ 39700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39700,48A,5,10,FF,FF,FF,FF
+[ 39795][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39795,4A3,3,12,00,3A
+[ 39807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39807,353,2,01,00
+[ 39807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39807,353,2,02,00
+[ 39858][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39858,43C,5,10,00,00,35,C0
+[ 39868][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39868,43C,5,30,00,00,91,78
+[ 39878][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39878,45C,5,30,00,00,00,10
+[ 39888][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39888,44C,5,10,00,00,04,74
+[ 39898][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39898,46C,5,30,00,00,00,03
+[ 39908][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39908,45C,5,31,00,00,00,13
+[ 39918][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39918,46C,5,32,00,00,00,12
+[ 39928][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39928,45C,5,33,00,00,00,3D
+[ 39938][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 39938,4FC,2,F0,03
+[ 40518][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40518,43B,5,10,00,00,35,DC
+[ 40528][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40528,44B,5,10,00,00,00,00
+[ 40538][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40538,45B,5,10,00,00,00,00
+[ 40548][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40548,47B,5,10,00,00,03,DB
+[ 40558][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40558,48B,5,10,FF,FF,FF,FF
+[ 40660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40660,43A,5,10,00,00,33,1D
+[ 40670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40670,44A,5,10,00,00,00,00
+[ 40680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40680,45A,5,10,00,00,00,00
+[ 40690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40690,47A,5,10,00,00,03,E8
+[ 40700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40700,48A,5,10,FF,FF,FF,FF
+[ 40856][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40856,43C,5,10,00,00,35,D4
+[ 40866][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40866,43C,5,30,00,00,8A,8E
+[ 40876][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40876,45C,5,30,00,00,00,10
+[ 40886][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40886,44C,5,10,00,00,04,6A
+[ 40896][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40896,46C,5,30,00,00,00,03
+[ 40906][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40906,45C,5,31,00,00,00,13
+[ 40916][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40916,46C,5,32,00,00,00,12
+[ 40926][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40926,45C,5,33,00,00,00,3D
+[ 40936][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 40936,4FC,2,F0,03
+[ 41173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41173,433,3,55,09,86
+[ 41249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41249,351,2,01,01
+[ 41259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41259,351,2,02,01
+[ 41391][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 41392][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 41431][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 41432][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 41432][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 41438][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 41444][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 41449][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 41455][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 41464][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 41470][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 41476][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 41481][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 41487][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 41492][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 41502][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 41507][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 41511][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41511,43B,5,10,00,00,35,DB
+[ 41520][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 41521][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41521,44B,5,10,00,00,00,00
+[ 41533][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41533,45B,5,10,00,00,00,00
+[ 41540][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 41541][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41541,47B,5,10,00,00,03,DB
+[ 41553][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41553,48B,5,10,FF,FF,FF,FF
+[ 41560][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 41566][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 41575][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 41581][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 41660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41660,43A,5,10,00,00,33,1D
+[ 41670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41670,44A,5,10,00,00,00,00
+[ 41680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41680,45A,5,10,00,00,00,00
+[ 41690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41690,47A,5,10,00,00,03,E8
+[ 41700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41700,48A,5,10,FF,FF,FF,FF
+[ 41794][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41794,4A3,3,12,00,3A
+[ 41807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41807,353,2,01,00
+[ 41807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41807,353,2,02,00
+[ 41854][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41854,43C,5,10,00,00,35,D4
+[ 41863][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41863,43C,5,30,00,00,94,8E
+[ 41873][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41873,45C,5,30,00,00,00,10
+[ 41883][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41883,44C,5,10,00,00,04,42
+[ 41893][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41893,46C,5,30,00,00,00,03
+[ 41903][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41903,45C,5,31,00,00,00,13
+[ 41913][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41913,46C,5,32,00,00,00,12
+[ 41923][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41923,45C,5,33,00,00,00,3D
+[ 41933][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 41933,4FC,2,F0,03
+[ 42504][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42504,43B,5,10,00,00,35,DC
+[ 42514][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42514,44B,5,10,00,00,00,00
+[ 42524][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42524,45B,5,10,00,00,00,00
+[ 42532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42532,421,5,01,00,00,00,49
+[ 42534][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42534,47B,5,10,00,00,03,DB
+[ 42544][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42544,48B,5,10,FF,FF,FF,FF
+[ 42555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42555,421,5,02,00,00,00,46
+[ 42578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42578,421,5,07,7F,FF,FF,FF
+[ 42601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42600,421,5,03,00,00,00,65
+[ 42623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42623,421,5,05,00,00,00,71
+[ 42646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42646,421,5,06,00,00,00,09
+[ 42660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42660,43A,5,10,00,00,33,1D
+[ 42669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42669,421,5,04,00,00,00,57
+[ 42670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42670,44A,5,10,00,00,00,00
+[ 42680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42680,45A,5,10,00,00,00,00
+[ 42690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42690,47A,5,10,00,00,03,E8
+[ 42700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42700,48A,5,10,FF,FF,FF,FF
+[ 42852][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42851,43C,5,10,00,00,35,CA
+[ 42861][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42861,43C,5,30,00,00,82,FA
+[ 42871][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42871,45C,5,30,00,00,00,10
+[ 42881][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42881,44C,5,10,00,00,04,56
+[ 42891][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42891,46C,5,30,00,00,00,03
+[ 42901][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42901,45C,5,31,00,00,00,13
+[ 42911][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42911,46C,5,32,00,00,00,12
+[ 42921][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42921,45C,5,33,00,00,00,3D
+[ 42931][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42931,4FC,2,F0,03
+[ 42958][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42958,423,5,01,00,00,00,5C
+[ 42972][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 42972,423,5,02,00,00,00,60
+[ 43255][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43255,351,2,01,01
+[ 43265][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43265,351,2,02,01
+[ 43334][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43334,423,5,03,00,00,00,4E
+[ 43400][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 43401][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 43498][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43498,43B,5,10,00,00,35,DA
+[ 43507][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43507,44B,5,10,00,00,00,00
+[ 43517][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43517,45B,5,10,00,00,00,00
+[ 43527][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43527,47B,5,10,00,00,03,DB
+[ 43537][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43537,48B,5,10,FF,FF,FF,FF
+[ 43660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43660,43A,5,10,00,00,33,1D
+[ 43669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43669,44A,5,10,00,00,00,00
+[ 43679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43679,45A,5,10,00,00,00,00
+[ 43689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43689,47A,5,10,00,00,03,E8
+[ 43699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43699,48A,5,10,FF,FF,FF,FF
+[ 43795][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43795,4A3,3,12,00,3A
+[ 43808][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43808,353,2,01,00
+[ 43808][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43808,353,2,02,00
+[ 43849][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43849,43C,5,10,00,00,35,D4
+[ 43859][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43859,43C,5,30,00,00,8F,CA
+[ 43869][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43869,45C,5,30,00,00,00,10
+[ 43879][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43879,44C,5,10,00,00,04,6A
+[ 43889][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43889,46C,5,30,00,00,00,03
+[ 43899][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43899,45C,5,31,00,00,00,13
+[ 43909][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43909,46C,5,32,00,00,00,12
+[ 43919][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43919,45C,5,33,00,00,00,3D
+[ 43929][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 43929,4FC,2,F0,03
+[ 44491][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44491,43B,5,10,00,00,35,DA
+[ 44500][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44500,44B,5,10,00,00,00,00
+[ 44510][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44510,45B,5,10,00,00,00,00
+[ 44520][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44520,47B,5,10,00,00,03,DB
+[ 44530][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44530,48B,5,10,FF,FF,FF,FF
+[ 44660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44660,43A,5,10,00,00,33,1E
+[ 44669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44669,44A,5,10,00,00,00,00
+[ 44679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44679,45A,5,10,00,00,00,00
+[ 44689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44689,47A,5,10,00,00,03,E8
+[ 44699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44699,48A,5,10,FF,FF,FF,FF
+[ 44847][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44847,43C,5,10,00,00,35,C0
+[ 44857][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44857,43C,5,30,00,00,94,7A
+[ 44867][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44867,45C,5,30,00,00,00,10
+[ 44877][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44877,44C,5,10,00,00,04,56
+[ 44887][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44887,46C,5,30,00,00,00,03
+[ 44897][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44897,45C,5,31,00,00,00,13
+[ 44907][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44907,46C,5,32,00,00,00,12
+[ 44917][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44917,45C,5,33,00,00,00,3D
+[ 44927][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 44927,4FC,2,F0,03
+[ 45251][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45251,351,2,01,01
+[ 45254][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45254,493,5,10,00,51,94,A9
+[ 45261][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45261,351,2,02,01
+[ 45388][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 45389][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 45392][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 45396][I][mapper.cpp:308] mapper_do(): [MPR] init -> 4 mS
+[ 45401][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 45407][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 45413][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 45418][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 45424][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 45433][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 45439][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 45445][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 45450][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 45456][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 45461][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 45471][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 45476][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 45482][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 45484][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45484,43B,5,10,00,00,35,DB
+[ 45495][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45495,44B,5,10,00,00,00,00
+[ 45502][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 45504][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45504,45B,5,10,00,00,00,00
+[ 45515][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45515,47B,5,10,00,00,03,DB
+[ 45522][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 45524][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45524,48B,5,10,FF,FF,FF,FF
+[ 45535][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 45544][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 45550][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 45660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45660,43A,5,10,00,00,33,1E
+[ 45669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45669,44A,5,10,00,00,00,00
+[ 45679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45679,45A,5,10,00,00,00,00
+[ 45689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45689,47A,5,10,00,00,03,E8
+[ 45699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45699,48A,5,10,FF,FF,FF,FF
+[ 45791][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45791,4A3,3,12,00,3A
+[ 45807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45807,353,2,01,00
+[ 45807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45807,353,2,02,00
+[ 45845][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45845,43C,5,10,00,00,35,D4
+[ 45855][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45855,43C,5,30,00,00,8A,16
+[ 45865][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45865,45C,5,30,00,00,00,10
+[ 45875][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45875,44C,5,10,00,00,04,6A
+[ 45885][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45885,46C,5,30,00,00,00,03
+[ 45895][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45895,45C,5,31,00,00,00,13
+[ 45905][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45905,46C,5,32,00,00,00,12
+[ 45915][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45915,45C,5,33,00,00,00,3D
+[ 45925][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 45925,4FC,2,F0,03
+[ 46173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46173,433,3,55,09,85
+[ 46477][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46477,43B,5,10,00,00,35,DA
+[ 46487][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46487,44B,5,10,00,00,00,00
+[ 46497][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46497,45B,5,10,00,00,00,00
+[ 46507][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46507,47B,5,10,00,00,03,DB
+[ 46517][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46517,48B,5,10,FF,FF,FF,FF
+[ 46535][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46535,421,5,01,00,00,00,49
+[ 46558][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46558,421,5,02,00,00,00,46
+[ 46581][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46581,421,5,07,7F,FF,FF,FF
+[ 46603][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46603,421,5,03,00,00,00,65
+[ 46626][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46626,421,5,05,00,00,00,71
+[ 46649][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46649,421,5,06,00,00,00,09
+[ 46660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46660,43A,5,10,00,00,33,1F
+[ 46669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46669,44A,5,10,00,00,00,00
+[ 46672][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46672,421,5,04,00,00,00,57
+[ 46679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46679,45A,5,10,00,00,00,00
+[ 46689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46689,47A,5,10,00,00,03,E8
+[ 46699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46699,48A,5,10,FF,FF,FF,FF
+[ 46843][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46843,43C,5,10,00,00,35,D4
+[ 46852][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46852,43C,5,30,00,00,87,E6
+[ 46862][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46862,45C,5,30,00,00,00,10
+[ 46872][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46872,44C,5,10,00,00,04,4C
+[ 46882][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46882,46C,5,30,00,00,00,03
+[ 46892][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46892,45C,5,31,00,00,00,13
+[ 46902][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46902,46C,5,32,00,00,00,12
+[ 46912][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46912,45C,5,33,00,00,00,3D
+[ 46922][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46922,4FC,2,F0,03
+[ 46958][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46958,423,5,01,00,00,00,5C
+[ 46972][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 46972,423,5,02,00,00,00,5F
+[ 47249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47249,351,2,01,01
+[ 47259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47259,351,2,02,01
+[ 47330][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47330,423,5,03,00,00,00,4E
+[ 47401][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 47402][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 47470][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47470,43B,5,10,00,00,35,DA
+[ 47480][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47480,44B,5,10,00,00,00,00
+[ 47490][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47490,45B,5,10,00,00,00,00
+[ 47500][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47500,47B,5,10,00,00,03,DB
+[ 47510][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47510,48B,5,10,FF,FF,FF,FF
+[ 47660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47660,43A,5,10,00,00,33,1E
+[ 47669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47669,44A,5,10,00,00,00,00
+[ 47679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47679,45A,5,10,00,00,00,00
+[ 47689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47689,47A,5,10,00,00,03,E8
+[ 47699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47699,48A,5,10,FF,FF,FF,FF
+[ 47791][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47791,4A3,3,12,00,39
+[ 47807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47807,353,2,01,00
+[ 47807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47807,353,2,02,00
+[ 47841][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47841,43C,5,10,00,00,35,C0
+[ 47850][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47850,43C,5,30,00,00,8F,52
+[ 47860][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47860,45C,5,30,00,00,00,10
+[ 47870][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47870,44C,5,10,00,00,04,6A
+[ 47880][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47880,46C,5,30,00,00,00,03
+[ 47890][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47890,45C,5,31,00,00,00,13
+[ 47900][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47900,46C,5,32,00,00,00,12
+[ 47910][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47910,45C,5,33,00,00,00,3D
+[ 47920][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 47920,4FC,2,F0,03
+[ 48463][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48463,43B,5,10,00,00,35,DB
+[ 48473][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48473,44B,5,10,00,00,00,00
+[ 48483][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48483,45B,5,10,00,00,00,00
+[ 48493][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48493,47B,5,10,00,00,03,DB
+[ 48503][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48503,48B,5,10,FF,FF,FF,FF
+[ 48660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48660,43A,5,10,00,00,33,1C
+[ 48670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48670,44A,5,10,00,00,00,00
+[ 48680][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48680,45A,5,10,00,00,00,00
+[ 48690][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48690,47A,5,10,00,00,03,E8
+[ 48700][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48700,48A,5,10,FF,FF,FF,FF
+[ 48839][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48839,43C,5,10,00,00,35,D4
+[ 48848][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48848,43C,5,30,00,00,97,A4
+[ 48858][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48858,45C,5,30,00,00,00,10
+[ 48868][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48868,44C,5,10,00,00,04,1A
+[ 48878][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48878,46C,5,30,00,00,00,03
+[ 48888][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48888,45C,5,31,00,00,00,13
+[ 48898][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48898,46C,5,32,00,00,00,12
+[ 48908][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48908,45C,5,33,00,00,00,3D
+[ 48918][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 48918,4FC,2,F0,03
+[ 49249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49249,351,2,01,01
+[ 49259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49259,351,2,02,01
+[ 49393][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 49394][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 49397][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 49401][I][mapper.cpp:308] mapper_do(): [MPR] init -> 4 mS
+[ 49406][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 49412][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 49418][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 49423][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 49429][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 49438][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 49444][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 49450][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 49455][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 49457][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49456,43B,5,10,00,00,35,DC
+[ 49468][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49468,44B,5,10,00,00,00,00
+[ 49475][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 49476][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49476,45B,5,10,00,00,00,00
+[ 49488][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49488,47B,5,10,00,00,03,DB
+[ 49495][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 49496][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49496,48B,5,10,FF,FF,FF,FF
+[ 49512][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 17 mS
+[ 49517][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 49523][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 49528][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 49534][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 49540][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 49549][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 49555][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 49660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49660,43A,5,10,00,00,33,1A
+[ 49669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49669,44A,5,10,00,00,00,00
+[ 49679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49679,45A,5,10,00,00,00,00
+[ 49689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49689,47A,5,10,00,00,03,E8
+[ 49699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49699,48A,5,10,FF,FF,FF,FF
+[ 49790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49790,4A3,3,12,00,39
+[ 49807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49807,353,2,01,00
+[ 49807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49807,353,2,02,00
+[ 49836][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49836,43C,5,10,00,00,35,D4
+[ 49846][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49846,43C,5,30,00,00,94,2A
+[ 49856][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49856,45C,5,30,00,00,00,10
+[ 49866][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49866,44C,5,10,00,00,04,56
+[ 49876][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49876,46C,5,30,00,00,00,03
+[ 49886][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49886,45C,5,31,00,00,00,13
+[ 49896][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49896,46C,5,32,00,00,00,12
+[ 49906][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49906,45C,5,33,00,00,00,3D
+[ 49916][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 49916,4FC,2,F0,03
+[ 50450][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50450,43B,5,10,00,00,35,D9
+[ 50459][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50459,44B,5,10,00,00,00,00
+[ 50469][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50469,45B,5,10,00,00,00,00
+[ 50479][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50479,47B,5,10,00,00,03,DB
+[ 50489][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50489,48B,5,10,FF,FF,FF,FF
+[ 50533][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50533,421,5,01,00,00,00,49
+[ 50556][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50556,421,5,02,00,00,00,46
+[ 50579][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50579,421,5,07,7F,FF,FF,FF
+[ 50601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50601,421,5,03,00,00,00,65
+[ 50624][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50624,421,5,05,00,00,00,71
+[ 50647][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50647,421,5,06,00,00,00,0A
+[ 50660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50660,43A,5,10,00,00,33,1C
+[ 50669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50669,44A,5,10,00,00,00,00
+[ 50670][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50670,421,5,04,00,00,00,57
+[ 50679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50679,45A,5,10,00,00,00,00
+[ 50689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50689,47A,5,10,00,00,03,E8
+[ 50699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50699,48A,5,10,FF,FF,FF,FF
+[ 50834][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50834,43C,5,10,00,00,35,D4
+[ 50844][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50844,43C,5,30,00,00,88,D6
+[ 50854][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50854,45C,5,30,00,00,00,10
+[ 50864][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50864,44C,5,10,00,00,04,6A
+[ 50874][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50874,46C,5,30,00,00,00,03
+[ 50884][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50884,45C,5,31,00,00,00,13
+[ 50894][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50894,46C,5,32,00,00,00,12
+[ 50904][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50904,45C,5,33,00,00,00,3D
+[ 50914][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50914,4FC,2,F0,03
+[ 50954][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50954,423,5,01,00,00,00,5C
+[ 50968][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 50968,423,5,02,00,00,00,5F
+[ 51173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51173,433,3,55,09,85
+[ 51251][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51251,351,2,01,01
+[ 51261][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51261,351,2,02,01
+[ 51329][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51329,423,5,03,00,00,00,4E
+[ 51396][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 51396][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 51443][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51443,43B,5,10,00,00,35,DA
+[ 51452][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51452,44B,5,10,00,00,00,00
+[ 51462][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51462,45B,5,10,00,00,00,00
+[ 51472][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51472,47B,5,10,00,00,03,DB
+[ 51482][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51482,48B,5,10,FF,FF,FF,FF
+[ 51503][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51503,491,5,10,00,0B,B7,58
+[ 51660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51660,43A,5,10,00,00,33,1E
+[ 51669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51669,44A,5,10,00,00,00,00
+[ 51679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51679,45A,5,10,00,00,00,00
+[ 51689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51689,47A,5,10,00,00,03,E8
+[ 51699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51699,48A,5,10,FF,FF,FF,FF
+[ 51790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51790,4A3,3,12,00,3A
+[ 51807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51807,353,2,01,00
+[ 51807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51807,353,2,02,00
+[ 51832][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51832,43C,5,10,00,00,35,D4
+[ 51841][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51841,43C,5,30,00,00,8E,C6
+[ 51851][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51851,45C,5,30,00,00,00,10
+[ 51861][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51861,44C,5,10,00,00,04,6A
+[ 51871][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51871,46C,5,30,00,00,00,03
+[ 51881][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51881,45C,5,31,00,00,00,13
+[ 51891][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51891,46C,5,32,00,00,00,12
+[ 51901][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51901,45C,5,33,00,00,00,3D
+[ 51911][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 51911,4FC,2,F0,03
+[ 52436][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52436,43B,5,10,00,00,35,DB
+[ 52445][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52445,44B,5,10,00,00,00,00
+[ 52455][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52455,45B,5,10,00,00,00,00
+[ 52465][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52465,47B,5,10,00,00,03,DB
+[ 52475][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52475,48B,5,10,FF,FF,FF,FF
+[ 52660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52660,43A,5,10,00,00,33,1F
+[ 52669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52669,44A,5,10,00,00,00,00
+[ 52679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52679,45A,5,10,00,00,00,00
+[ 52689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52689,47A,5,10,00,00,03,E8
+[ 52699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52699,48A,5,10,FF,FF,FF,FF
+[ 52830][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52829,43C,5,10,00,00,35,D4
+[ 52839][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52839,43C,5,30,00,00,8E,94
+[ 52849][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52849,45C,5,30,00,00,00,10
+[ 52859][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52859,44C,5,10,00,00,04,74
+[ 52869][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52869,46C,5,30,00,00,00,03
+[ 52879][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52879,45C,5,31,00,00,00,13
+[ 52889][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52889,46C,5,32,00,00,00,12
+[ 52899][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52899,45C,5,33,00,00,00,3D
+[ 52909][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 52909,4FC,2,F0,03
+[ 53250][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53250,351,2,01,01
+[ 53260][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53260,351,2,02,01
+[ 53399][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 53399][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 53406][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 53407][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 53411][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 1 mS
+[ 53417][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 53423][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 53428][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 53429][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53429,43B,5,10,00,00,35,DA
+[ 53441][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53441,44B,5,10,00,00,00,00
+[ 53449][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 53449][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53449,45B,5,10,00,00,00,00
+[ 53465][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53465,47B,5,10,00,00,03,DB
+[ 53472][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53472,48B,5,10,FF,FF,FF,FF
+[ 53480][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 31 mS
+[ 53485][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 53491][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 53496][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 53502][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 53508][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 53517][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 53522][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 53528][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 53534][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 53539][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 53545][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 53554][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 53560][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 53660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53660,43A,5,10,00,00,33,1D
+[ 53669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53669,44A,5,10,00,00,00,00
+[ 53679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53679,45A,5,10,00,00,00,00
+[ 53689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53689,47A,5,10,00,00,03,E8
+[ 53699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53699,48A,5,10,FF,FF,FF,FF
+[ 53790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53790,4A3,3,12,00,3A
+[ 53807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53807,353,2,01,00
+[ 53807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53807,353,2,02,00
+[ 53827][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53827,43C,5,10,00,00,35,CA
+[ 53837][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53837,43C,5,30,00,00,8F,7A
+[ 53847][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53847,45C,5,30,00,00,00,10
+[ 53857][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53857,44C,5,10,00,00,04,7E
+[ 53867][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53867,46C,5,30,00,00,00,03
+[ 53877][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53877,45C,5,31,00,00,00,13
+[ 53887][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53887,46C,5,32,00,00,00,12
+[ 53897][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53897,45C,5,33,00,00,00,3D
+[ 53907][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 53907,4FC,2,F0,03
+[ 54422][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54422,43B,5,10,00,00,35,DA
+[ 54432][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54432,44B,5,10,00,00,00,00
+[ 54442][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54442,45B,5,10,00,00,00,00
+[ 54452][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54452,47B,5,10,00,00,03,DB
+[ 54462][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54462,48B,5,10,FF,FF,FF,FF
+[ 54535][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54535,421,5,01,00,00,00,49
+[ 54558][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54558,421,5,02,00,00,00,46
+[ 54581][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54581,421,5,07,7F,FF,FF,FF
+[ 54604][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54603,421,5,03,00,00,00,65
+[ 54626][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54626,421,5,05,00,00,00,71
+[ 54649][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54649,421,5,06,00,00,00,09
+[ 54660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54660,43A,5,10,00,00,33,1D
+[ 54669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54669,44A,5,10,00,00,00,00
+[ 54672][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54672,421,5,04,00,00,00,57
+[ 54679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54679,45A,5,10,00,00,00,00
+[ 54689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54689,47A,5,10,00,00,03,E8
+[ 54699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54699,48A,5,10,FF,FF,FF,FF
+[ 54825][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54825,43C,5,10,00,00,35,D4
+[ 54835][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54835,43C,5,30,00,00,88,0E
+[ 54845][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54845,45C,5,30,00,00,00,10
+[ 54855][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54855,44C,5,10,00,00,04,6A
+[ 54865][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54865,46C,5,30,00,00,00,03
+[ 54875][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54875,45C,5,31,00,00,00,13
+[ 54885][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54885,46C,5,32,00,00,00,12
+[ 54895][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54895,45C,5,33,00,00,00,3D
+[ 54905][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54905,4FC,2,F0,03
+[ 54958][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54958,423,5,01,00,00,00,5C
+[ 54972][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 54972,423,5,02,00,00,00,60
+[ 55249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55249,351,2,01,01
+[ 55259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55259,351,2,02,01
+[ 55334][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55334,423,5,03,00,00,00,4E
+[ 55401][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 55402][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 55416][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55416,43B,5,10,00,00,35,DA
+[ 55425][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55425,44B,5,10,00,00,00,00
+[ 55435][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55435,45B,5,10,00,00,00,00
+[ 55445][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55445,47B,5,10,00,00,03,DB
+[ 55455][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55455,48B,5,10,FF,FF,FF,FF
+[ 55660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55660,43A,5,10,00,00,33,1D
+[ 55669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55669,44A,5,10,00,00,00,00
+[ 55679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55679,45A,5,10,00,00,00,00
+[ 55689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55689,47A,5,10,00,00,03,E8
+[ 55699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55699,48A,5,10,FF,FF,FF,FF
+[ 55795][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55795,4A3,3,12,00,3A
+[ 55808][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55808,353,2,01,00
+[ 55808][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55808,353,2,02,00
+[ 55823][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55823,43C,5,10,00,00,35,D4
+[ 55832][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55832,43C,5,30,00,00,87,78
+[ 55842][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55842,45C,5,30,00,00,00,10
+[ 55852][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55852,44C,5,10,00,00,04,38
+[ 55862][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55862,46C,5,30,00,00,00,03
+[ 55872][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55872,45C,5,31,00,00,00,13
+[ 55882][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55882,46C,5,32,00,00,00,12
+[ 55892][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55892,45C,5,33,00,00,00,3D
+[ 55902][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 55902,4FC,2,F0,03
+[ 56173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56173,433,3,55,09,83
+[ 56409][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56409,43B,5,10,00,00,35,DB
+[ 56418][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56418,44B,5,10,00,00,00,00
+[ 56428][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56428,45B,5,10,00,00,00,00
+[ 56438][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56438,47B,5,10,00,00,03,DB
+[ 56448][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56448,48B,5,10,FF,FF,FF,FF
+[ 56660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56660,43A,5,10,00,00,33,1D
+[ 56669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56669,44A,5,10,00,00,00,00
+[ 56679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56679,45A,5,10,00,00,00,00
+[ 56689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56689,47A,5,10,00,00,03,E8
+[ 56699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56699,48A,5,10,FF,FF,FF,FF
+[ 56820][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56820,43C,5,10,00,00,35,D4
+[ 56830][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56830,43C,5,30,00,00,8D,FE
+[ 56840][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56840,45C,5,30,00,00,00,10
+[ 56850][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56850,44C,5,10,00,00,04,74
+[ 56860][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56860,46C,5,30,00,00,00,03
+[ 56870][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56870,45C,5,31,00,00,00,13
+[ 56880][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56880,46C,5,32,00,00,00,12
+[ 56890][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56890,45C,5,33,00,00,00,3D
+[ 56900][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 56900,4FC,2,F0,03
+[ 57249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57249,351,2,01,01
+[ 57259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57259,351,2,02,01
+[ 57402][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57402,43B,5,10,00,00,35,DB
+[ 57412][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57412,44B,5,10,00,00,00,00
+[ 57413][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 57415][I][mapper.cpp:308] mapper_do(): [MPR] init -> 2 mS
+[ 57422][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57422,45B,5,10,00,00,00,00
+[ 57428][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 57432][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57432,47B,5,10,00,00,03,DB
+[ 57441][I][mapper.cpp:308] mapper_do(): [MPR] init -> 13 mS
+[ 57442][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57442,48B,5,10,FF,FF,FF,FF
+[ 57454][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 57460][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 57465][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 57471][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 57477][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 57486][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 57491][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 57497][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 57503][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 57508][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 57514][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 57523][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 57529][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 57535][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 57540][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 57546][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 57551][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 57561][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 57566][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 57660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57660,43A,5,10,00,00,33,1E
+[ 57669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57669,44A,5,10,00,00,00,00
+[ 57679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57679,45A,5,10,00,00,00,00
+[ 57689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57689,47A,5,10,00,00,03,E8
+[ 57699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57699,48A,5,10,FF,FF,FF,FF
+[ 57793][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57793,4A3,3,12,00,39
+[ 57807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57807,353,2,01,00
+[ 57807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57807,353,2,02,00
+[ 57818][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57818,43C,5,10,00,00,35,D4
+[ 57828][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57828,43C,5,30,00,00,8D,EA
+[ 57838][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57838,45C,5,30,00,00,00,10
+[ 57848][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57848,44C,5,10,00,00,04,74
+[ 57858][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57858,46C,5,30,00,00,00,03
+[ 57868][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57868,45C,5,31,00,00,00,13
+[ 57878][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57878,46C,5,32,00,00,00,12
+[ 57888][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57888,45C,5,33,00,00,00,3D
+[ 57898][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 57898,4FC,2,F0,03
+[ 58395][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58395,43B,5,10,00,00,35,DA
+[ 58405][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58405,44B,5,10,00,00,00,00
+[ 58415][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58415,45B,5,10,00,00,00,00
+[ 58425][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58425,47B,5,10,00,00,03,DB
+[ 58435][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58435,48B,5,10,FF,FF,FF,FF
+[ 58532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58532,421,5,01,00,00,00,49
+[ 58555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58555,421,5,02,00,00,00,46
+[ 58578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58578,421,5,07,7F,FF,FF,FF
+[ 58601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58601,421,5,03,00,00,00,66
+[ 58624][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58624,421,5,05,00,00,00,71
+[ 58646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58646,421,5,06,00,00,00,0A
+[ 58660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58660,43A,5,10,00,00,33,1E
+[ 58669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58669,44A,5,10,00,00,00,00
+[ 58669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58669,421,5,04,00,00,00,57
+[ 58679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58679,45A,5,10,00,00,00,00
+[ 58689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58689,47A,5,10,00,00,03,E8
+[ 58699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58699,48A,5,10,FF,FF,FF,FF
+[ 58816][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58816,43C,5,10,00,00,35,CA
+[ 58825][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58825,43C,5,30,00,00,93,1C
+[ 58835][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58835,45C,5,30,00,00,00,10
+[ 58845][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58845,44C,5,10,00,00,04,60
+[ 58855][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58855,46C,5,30,00,00,00,03
+[ 58865][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58865,45C,5,31,00,00,00,13
+[ 58875][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58875,46C,5,32,00,00,00,12
+[ 58885][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58885,45C,5,33,00,00,00,3D
+[ 58895][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58895,4FC,2,F0,03
+[ 58961][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58961,423,5,01,00,00,00,5C
+[ 58975][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 58975,423,5,02,00,00,00,5F
+[ 59250][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59250,351,2,01,01
+[ 59260][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59260,351,2,02,01
+[ 59336][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59336,423,5,03,00,00,00,4E
+[ 59388][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59388,43B,5,10,00,00,35,DB
+[ 59398][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59398,44B,5,10,00,00,00,00
+[ 59406][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 59406][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 59408][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59408,45B,5,10,00,00,00,00
+[ 59418][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59418,47B,5,10,00,00,03,DB
+[ 59428][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59428,48B,5,10,FF,FF,FF,FF
+[ 59660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59660,43A,5,10,00,00,33,1C
+[ 59669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59669,44A,5,10,00,00,00,00
+[ 59679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59679,45A,5,10,00,00,00,00
+[ 59689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59689,47A,5,10,00,00,03,E8
+[ 59699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59699,48A,5,10,FF,FF,FF,FF
+[ 59790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59790,4A3,3,12,00,39
+[ 59807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59807,353,2,01,00
+[ 59807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59807,353,2,02,00
+[ 59814][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59814,43C,5,10,00,00,35,CA
+[ 59823][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59823,43C,5,30,00,00,87,96
+[ 59833][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59833,45C,5,30,00,00,00,10
+[ 59843][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59843,44C,5,10,00,00,04,60
+[ 59853][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59853,46C,5,30,00,00,00,03
+[ 59863][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59863,45C,5,31,00,00,00,13
+[ 59873][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59873,46C,5,32,00,00,00,12
+[ 59883][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59883,45C,5,33,00,00,00,3D
+[ 59893][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 59893,4FC,2,F0,03
+[ 60255][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60255,493,5,10,00,51,94,B8
+[ 60381][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60381,43B,5,10,00,00,35,DC
+[ 60391][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60391,44B,5,10,00,00,00,00
+[ 60401][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60401,45B,5,10,00,00,00,00
+[ 60411][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60411,47B,5,10,00,00,03,DB
+[ 60421][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60421,48B,5,10,FF,FF,FF,FF
+[ 60660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60660,43A,5,10,00,00,33,1D
+[ 60669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60669,44A,5,10,00,00,00,00
+[ 60679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60679,45A,5,10,00,00,00,00
+[ 60689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60689,47A,5,10,00,00,03,E8
+[ 60699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60699,48A,5,10,FF,FF,FF,FF
+[ 60811][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60811,43C,5,10,00,00,35,D4
+[ 60821][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60821,43C,5,30,00,00,89,4E
+[ 60831][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60831,45C,5,30,00,00,00,10
+[ 60841][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60841,44C,5,10,00,00,04,88
+[ 60851][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60851,46C,5,30,00,00,00,03
+[ 60861][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60861,45C,5,31,00,00,00,13
+[ 60871][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60871,46C,5,32,00,00,00,12
+[ 60881][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60881,45C,5,33,00,00,00,3D
+[ 60891][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 60891,4FC,2,F0,03
+[ 61180][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61180,433,3,55,09,83
+[ 61251][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61251,351,2,01,01
+[ 61261][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61261,351,2,02,01
+[ 61374][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61374,43B,5,10,00,00,35,DA
+[ 61384][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61384,44B,5,10,00,00,00,00
+[ 61394][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61394,45B,5,10,00,00,00,00
+[ 61404][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61404,47B,5,10,00,00,03,DB
+[ 61414][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61414,48B,5,10,FF,FF,FF,FF
+[ 61415][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 61417][I][mapper.cpp:308] mapper_do(): [MPR] init -> 2 mS
+[ 61423][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 61429][I][mapper.cpp:308] mapper_do(): [MPR] init -> 6 mS
+[ 61434][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 61440][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 61446][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 61451][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 61457][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 61466][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 61472][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 61478][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 61483][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 61489][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 61494][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 61504][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 61509][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 61515][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 61520][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 61526][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 61532][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 61541][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 61547][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 61660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61660,43A,5,10,00,00,33,1C
+[ 61669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61669,44A,5,10,00,00,00,00
+[ 61679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61679,45A,5,10,00,00,00,00
+[ 61689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61689,47A,5,10,00,00,03,E8
+[ 61699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61699,48A,5,10,FF,FF,FF,FF
+[ 61792][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61792,4A3,3,12,00,39
+[ 61807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61807,353,2,01,00
+[ 61807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 61807,353,2,02,00
+[ 62368][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62368,43B,5,10,00,00,35,DA
+[ 62377][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62377,44B,5,10,00,00,00,00
+[ 62387][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62387,45B,5,10,00,00,00,00
+[ 62397][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62397,47B,5,10,00,00,03,DB
+[ 62407][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62407,48B,5,10,FF,FF,FF,FF
+[ 62532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62532,421,5,01,00,00,00,49
+[ 62555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62555,421,5,02,00,00,00,46
+[ 62578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62578,421,5,07,7F,FF,FF,FF
+[ 62600][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62600,421,5,03,00,00,00,65
+[ 62623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62623,421,5,05,00,00,00,71
+[ 62646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62646,421,5,06,00,00,00,09
+[ 62660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62660,43A,5,10,00,00,33,1C
+[ 62669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62669,44A,5,10,00,00,00,00
+[ 62669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62669,421,5,04,00,00,00,57
+[ 62679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62679,45A,5,10,00,00,00,00
+[ 62689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62689,47A,5,10,00,00,03,E8
+[ 62699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62699,48A,5,10,FF,FF,FF,FF
+[ 62956][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62956,423,5,01,00,00,00,5C
+[ 62970][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 62970,423,5,02,00,00,00,5F
+[ 63249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63249,351,2,01,01
+[ 63259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63259,351,2,02,01
+[ 63330][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63330,423,5,03,00,00,00,4E
+[ 63361][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63361,43B,5,10,00,00,35,DB
+[ 63370][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63370,44B,5,10,00,00,00,00
+[ 63380][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63380,45B,5,10,00,00,00,00
+[ 63390][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63390,47B,5,10,00,00,03,DB
+[ 63400][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63400,48B,5,10,FF,FF,FF,FF
+[ 63411][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 63411][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 63660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63660,43A,5,10,00,00,33,1D
+[ 63669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63669,44A,5,10,00,00,00,00
+[ 63679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63679,45A,5,10,00,00,00,00
+[ 63689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63689,47A,5,10,00,00,03,E8
+[ 63699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63699,48A,5,10,FF,FF,FF,FF
+[ 63791][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63791,4A3,3,12,00,39
+[ 63807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63807,353,2,01,00
+[ 63807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 63807,353,2,02,00
+[ 64354][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64354,43B,5,10,00,00,35,D9
+[ 64363][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64363,44B,5,10,00,00,00,00
+[ 64373][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64373,45B,5,10,00,00,00,00
+[ 64383][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64383,47B,5,10,00,00,03,DB
+[ 64393][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64393,48B,5,10,FF,FF,FF,FF
+[ 64660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64659,43A,5,10,00,00,33,1C
+[ 64669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64669,44A,5,10,00,00,00,00
+[ 64679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64679,45A,5,10,00,00,00,00
+[ 64689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64689,47A,5,10,00,00,03,E8
+[ 64699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 64699,48A,5,10,FF,FF,FF,FF
+[ 65249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65249,351,2,01,01
+[ 65259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65259,351,2,02,01
+[ 65347][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65347,43B,5,10,00,00,35,D9
+[ 65356][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65356,44B,5,10,00,00,00,00
+[ 65366][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65366,45B,5,10,00,00,00,00
+[ 65376][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65376,47B,5,10,00,00,03,DB
+[ 65386][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65386,48B,5,10,FF,FF,FF,FF
+[ 65413][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 65414][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 65416][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 65421][I][mapper.cpp:308] mapper_do(): [MPR] init -> 5 mS
+[ 65426][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 65432][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 65438][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 65443][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 65449][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 65458][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 65464][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 65470][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 65475][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 65481][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 65486][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 65496][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 65501][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 65507][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 65513][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 65518][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 65524][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 65533][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 65539][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 65660][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65659,43A,5,10,00,00,33,1C
+[ 65669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65669,44A,5,10,00,00,00,00
+[ 65679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65679,45A,5,10,00,00,00,00
+[ 65689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65689,47A,5,10,00,00,03,E8
+[ 65699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65699,48A,5,10,FF,FF,FF,FF
+[ 65794][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65794,4A3,3,12,00,39
+[ 65807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65807,353,2,01,00
+[ 65807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 65807,353,2,02,00
+[ 66173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66173,433,3,55,09,82
+[ 66340][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66340,43B,5,10,00,00,35,D9
+[ 66350][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66350,44B,5,10,00,00,00,00
+[ 66360][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66360,45B,5,10,00,00,00,00
+[ 66370][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66370,47B,5,10,00,00,03,DB
+[ 66380][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66380,48B,5,10,FF,FF,FF,FF
+[ 66493][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66493,491,5,10,00,0B,B7,67
+[ 66532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66532,421,5,02,00,00,00,46
+[ 66555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66555,421,5,01,00,00,00,49
+[ 66578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66578,421,5,07,7F,FF,FF,FF
+[ 66601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66600,421,5,05,00,00,00,71
+[ 66623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66623,421,5,06,00,00,00,0A
+[ 66646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66646,421,5,03,00,00,00,65
+[ 66659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66659,43A,5,10,00,00,33,1C
+[ 66669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66669,44A,5,10,00,00,00,00
+[ 66669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66669,421,5,04,00,00,00,57
+[ 66679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66679,45A,5,10,00,00,00,00
+[ 66689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66689,47A,5,10,00,00,03,E8
+[ 66699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66699,48A,5,10,FF,FF,FF,FF
+[ 66956][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66956,423,5,01,00,00,00,5C
+[ 66970][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 66970,423,5,02,00,00,00,60
+[ 67249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67249,351,2,01,01
+[ 67259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67259,351,2,02,01
+[ 67330][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67330,423,5,03,00,00,00,4E
+[ 67333][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67333,43B,5,10,00,00,35,DB
+[ 67343][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67343,44B,5,10,00,00,00,00
+[ 67353][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67353,45B,5,10,00,00,00,00
+[ 67363][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67363,47B,5,10,00,00,03,DB
+[ 67373][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67373,48B,5,10,FF,FF,FF,FF
+[ 67416][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 67417][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 67659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67659,43A,5,10,00,00,33,1D
+[ 67669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67669,44A,5,10,00,00,00,00
+[ 67679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67679,45A,5,10,00,00,00,00
+[ 67689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67689,47A,5,10,00,00,03,E8
+[ 67699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67699,48A,5,10,FF,FF,FF,FF
+[ 67791][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67791,4A3,3,12,00,39
+[ 67807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67807,353,2,01,00
+[ 67807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 67807,353,2,02,00
+[ 68326][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68326,43B,5,10,00,00,35,DB
+[ 68336][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68336,44B,5,10,00,00,00,00
+[ 68346][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68346,45B,5,10,00,00,00,00
+[ 68356][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68356,47B,5,10,00,00,03,DB
+[ 68366][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68366,48B,5,10,FF,FF,FF,FF
+[ 68659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68659,43A,5,10,00,00,33,1D
+[ 68669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68669,44A,5,10,00,00,00,00
+[ 68679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68679,45A,5,10,00,00,00,00
+[ 68689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68689,47A,5,10,00,00,03,E8
+[ 68699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 68699,48A,5,10,FF,FF,FF,FF
+[ 69249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69249,351,2,01,01
+[ 69259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69259,351,2,02,01
+[ 69319][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69319,43B,5,10,00,00,35,DB
+[ 69329][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69329,44B,5,10,00,00,00,00
+[ 69339][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69339,45B,5,10,00,00,00,00
+[ 69349][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69349,47B,5,10,00,00,03,DB
+[ 69359][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69359,48B,5,10,FF,FF,FF,FF
+[ 69419][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 69419][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 69421][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 69426][I][mapper.cpp:308] mapper_do(): [MPR] init -> 5 mS
+[ 69432][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 69438][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 1 mS
+[ 69443][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 69449][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 1 mS
+[ 69454][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 69464][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 69469][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 69475][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 69480][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 69486][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 69492][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 69501][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 69506][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 69512][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 69518][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 69523][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 69529][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 69539][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 69544][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 69659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69659,43A,5,10,00,00,33,1D
+[ 69669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69669,44A,5,10,00,00,00,00
+[ 69679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69679,45A,5,10,00,00,00,00
+[ 69689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69689,47A,5,10,00,00,03,E8
+[ 69699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69699,48A,5,10,FF,FF,FF,FF
+[ 69793][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69793,4A3,3,12,00,39
+[ 69807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69807,353,2,01,00
+[ 69807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 69807,353,2,02,00
+[ 70312][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70312,43B,5,10,00,00,35,DC
+[ 70322][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70322,44B,5,10,00,00,00,00
+[ 70332][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70332,45B,5,10,00,00,00,00
+[ 70342][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70342,47B,5,10,00,00,03,DB
+[ 70352][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70352,48B,5,10,FF,FF,FF,FF
+[ 70532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70532,421,5,01,00,00,00,49
+[ 70555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70555,421,5,02,00,00,00,46
+[ 70578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70578,421,5,07,7F,FF,FF,FF
+[ 70601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70600,421,5,03,00,00,00,65
+[ 70623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70623,421,5,05,00,00,00,71
+[ 70646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70646,421,5,06,00,00,00,0A
+[ 70659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70659,43A,5,10,00,00,33,1D
+[ 70669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70669,44A,5,10,00,00,00,00
+[ 70669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70669,421,5,04,00,00,00,57
+[ 70679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70679,45A,5,10,00,00,00,00
+[ 70689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70689,47A,5,10,00,00,03,E8
+[ 70699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70699,48A,5,10,FF,FF,FF,FF
+[ 70956][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70956,423,5,01,00,00,00,5C
+[ 70970][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 70970,423,5,02,00,00,00,5F
+[ 71173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71173,433,3,55,09,83
+[ 71249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71249,351,2,01,01
+[ 71259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71259,351,2,02,01
+[ 71306][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71306,43B,5,10,00,00,35,DB
+[ 71315][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71315,44B,5,10,00,00,00,00
+[ 71325][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71325,45B,5,10,00,00,00,00
+[ 71333][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71333,423,5,03,00,00,00,4E
+[ 71335][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71335,47B,5,10,00,00,03,DB
+[ 71345][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71345,48B,5,10,FF,FF,FF,FF
+[ 71434][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 71435][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 71659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71659,43A,5,10,00,00,33,1D
+[ 71669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71669,44A,5,10,00,00,00,00
+[ 71679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71679,45A,5,10,00,00,00,00
+[ 71689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71689,47A,5,10,00,00,03,E8
+[ 71699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71699,48A,5,10,FF,FF,FF,FF
+[ 71796][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71796,4A3,3,12,00,39
+[ 71809][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71809,353,2,01,00
+[ 71809][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 71809,353,2,02,00
+[ 72299][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72299,43B,5,10,00,00,35,DB
+[ 72308][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72308,44B,5,10,00,00,00,00
+[ 72318][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72318,45B,5,10,00,00,00,00
+[ 72328][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72328,47B,5,10,00,00,03,DB
+[ 72338][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72338,48B,5,10,FF,FF,FF,FF
+[ 72659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72659,43A,5,10,00,00,33,1F
+[ 72669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72669,44A,5,10,00,00,00,00
+[ 72679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72679,45A,5,10,00,00,00,00
+[ 72689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72689,47A,5,10,00,00,03,E8
+[ 72699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 72699,48A,5,10,FF,FF,FF,FF
+[ 73249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73249,351,2,01,01
+[ 73259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73259,351,2,02,01
+[ 73292][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73292,43B,5,10,00,00,35,DB
+[ 73302][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73302,44B,5,10,00,00,00,00
+[ 73312][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73312,45B,5,10,00,00,00,00
+[ 73322][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73322,47B,5,10,00,00,03,DB
+[ 73332][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73332,48B,5,10,FF,FF,FF,FF
+[ 73424][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 73425][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 73429][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 73432][I][mapper.cpp:308] mapper_do(): [MPR] init -> 3 mS
+[ 73437][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 73443][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 73449][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 73454][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 73460][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 73469][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 73475][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 73481][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 73486][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 73492][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 73497][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 73507][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 73512][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 73518][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 73523][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 73529][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 73535][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 73544][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 73550][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 73659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73659,43A,5,10,00,00,33,1E
+[ 73669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73669,44A,5,10,00,00,00,00
+[ 73679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73679,45A,5,10,00,00,00,00
+[ 73689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73689,47A,5,10,00,00,03,E8
+[ 73699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73699,48A,5,10,FF,FF,FF,FF
+[ 73791][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73791,4A3,3,12,00,39
+[ 73807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73807,353,2,01,00
+[ 73807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 73807,353,2,02,00
+[ 74285][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74285,43B,5,10,00,00,35,DA
+[ 74295][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74295,44B,5,10,00,00,00,00
+[ 74305][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74305,45B,5,10,00,00,00,00
+[ 74315][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74315,47B,5,10,00,00,03,DB
+[ 74325][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74325,48B,5,10,FF,FF,FF,FF
+[ 74532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74532,421,5,01,00,00,00,49
+[ 74555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74555,421,5,02,00,00,00,46
+[ 74578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74578,421,5,07,7F,FF,FF,FF
+[ 74600][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74600,421,5,03,00,00,00,65
+[ 74623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74623,421,5,05,00,00,00,71
+[ 74646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74646,421,5,06,00,00,00,0A
+[ 74659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74659,43A,5,10,00,00,33,1D
+[ 74669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74669,421,5,04,00,00,00,57
+[ 74669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74669,44A,5,10,00,00,00,00
+[ 74679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74679,45A,5,10,00,00,00,00
+[ 74689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74689,47A,5,10,00,00,03,E8
+[ 74699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74699,48A,5,10,FF,FF,FF,FF
+[ 74955][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74955,423,5,01,00,00,00,5C
+[ 74969][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 74969,423,5,02,00,00,00,5F
+[ 75249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75249,351,2,01,01
+[ 75256][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75256,493,5,10,00,51,94,C7
+[ 75259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75259,351,2,02,01
+[ 75278][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75278,43B,5,10,00,00,35,DA
+[ 75288][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75288,44B,5,10,00,00,00,00
+[ 75298][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75298,45B,5,10,00,00,00,00
+[ 75308][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75308,47B,5,10,00,00,03,DB
+[ 75318][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75318,48B,5,10,FF,FF,FF,FF
+[ 75329][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75329,423,5,03,00,00,00,4E
+[ 75426][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 75427][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 75659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75659,43A,5,10,00,00,33,1D
+[ 75669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75669,44A,5,10,00,00,00,00
+[ 75679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75679,45A,5,10,00,00,00,00
+[ 75689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75689,47A,5,10,00,00,03,E8
+[ 75699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75699,48A,5,10,FF,FF,FF,FF
+[ 75792][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75792,4A3,3,12,00,39
+[ 75807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75807,353,2,01,00
+[ 75807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 75807,353,2,02,00
+[ 76173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76173,433,3,55,09,84
+[ 76271][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76271,43B,5,10,00,00,35,DA
+[ 76281][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76281,44B,5,10,00,00,00,00
+[ 76291][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76291,45B,5,10,00,00,00,00
+[ 76301][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76301,47B,5,10,00,00,03,DB
+[ 76311][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76311,48B,5,10,FF,FF,FF,FF
+[ 76659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76659,43A,5,10,00,00,33,1C
+[ 76669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76669,44A,5,10,00,00,00,00
+[ 76679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76679,45A,5,10,00,00,00,00
+[ 76689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76689,47A,5,10,00,00,03,E8
+[ 76699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 76699,48A,5,10,FF,FF,FF,FF
+[ 77249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77249,351,2,01,01
+[ 77259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77259,351,2,02,01
+[ 77265][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77265,43B,5,10,00,00,35,DB
+[ 77274][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77274,44B,5,10,00,00,00,00
+[ 77284][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77284,45B,5,10,00,00,00,00
+[ 77294][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77294,47B,5,10,00,00,03,DB
+[ 77304][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77304,48B,5,10,FF,FF,FF,FF
+[ 77429][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 77429][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 77432][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 77437][I][mapper.cpp:308] mapper_do(): [MPR] init -> 5 mS
+[ 77442][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 77448][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 77453][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 77459][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 77465][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 77474][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 77479][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 77485][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 77491][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 77496][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 77502][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 77511][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 77517][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 77523][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 77528][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 77534][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 77539][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 77549][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 77554][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 77659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77659,43A,5,10,00,00,33,1D
+[ 77669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77669,44A,5,10,00,00,00,00
+[ 77679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77679,45A,5,10,00,00,00,00
+[ 77689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77689,47A,5,10,00,00,03,E8
+[ 77699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77699,48A,5,10,FF,FF,FF,FF
+[ 77790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77790,4A3,3,12,00,39
+[ 77807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77807,353,2,01,00
+[ 77807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 77807,353,2,02,00
+[ 78258][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78258,43B,5,10,00,00,35,DA
+[ 78267][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78267,44B,5,10,00,00,00,00
+[ 78277][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78277,45B,5,10,00,00,00,00
+[ 78287][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78287,47B,5,10,00,00,03,DB
+[ 78297][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78297,48B,5,10,FF,FF,FF,FF
+[ 78534][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78534,421,5,02,00,00,00,46
+[ 78557][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78557,421,5,01,00,00,00,49
+[ 78580][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78580,421,5,07,7F,FF,FF,FF
+[ 78603][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78602,421,5,05,00,00,00,71
+[ 78625][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78625,421,5,06,00,00,00,0A
+[ 78648][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78648,421,5,03,00,00,00,65
+[ 78659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78659,43A,5,10,00,00,33,1C
+[ 78669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78669,44A,5,10,00,00,00,00
+[ 78671][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78671,421,5,04,00,00,00,57
+[ 78679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78679,45A,5,10,00,00,00,00
+[ 78689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78689,47A,5,10,00,00,03,E8
+[ 78699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78699,48A,5,10,FF,FF,FF,FF
+[ 78958][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78958,423,5,01,00,00,00,5D
+[ 78972][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 78972,423,5,02,00,00,00,5F
+[ 79249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79249,351,2,01,01
+[ 79259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79259,351,2,02,01
+[ 79334][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79334,423,5,03,00,00,00,4E
+[ 79439][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 79440][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 79659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79659,43A,5,10,00,00,33,1F
+[ 79669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79669,44A,5,10,00,00,00,00
+[ 79679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79679,45A,5,10,00,00,00,00
+[ 79689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79689,47A,5,10,00,00,03,E8
+[ 79699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79699,48A,5,10,FF,FF,FF,FF
+[ 79793][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79793,4A3,3,12,00,39
+[ 79807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79807,353,2,01,00
+[ 79807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 79807,353,2,02,00
+[ 80244][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80244,43B,5,10,00,00,35,DC
+[ 80254][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80254,44B,5,10,00,00,00,00
+[ 80264][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80264,45B,5,10,00,00,00,00
+[ 80274][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80274,47B,5,10,00,00,03,DB
+[ 80284][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80284,48B,5,10,FF,FF,FF,FF
+[ 80659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80659,43A,5,10,00,00,33,1D
+[ 80669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80669,44A,5,10,00,00,00,00
+[ 80679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80679,45A,5,10,00,00,00,00
+[ 80689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80689,47A,5,10,00,00,03,E8
+[ 80699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 80699,48A,5,10,FF,FF,FF,FF
+[ 81174][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81174,433,3,55,09,83
+[ 81238][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81237,43B,5,10,00,00,35,DD
+[ 81247][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81247,44B,5,10,00,00,00,00
+[ 81249][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81249,351,2,01,01
+[ 81257][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81257,45B,5,10,00,00,00,00
+[ 81259][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81259,351,2,02,01
+[ 81267][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81267,47B,5,10,00,00,03,DB
+[ 81277][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81277,48B,5,10,FF,FF,FF,FF
+[ 81433][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 81434][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 81436][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 81441][I][mapper.cpp:308] mapper_do(): [MPR] init -> 5 mS
+[ 81446][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 81452][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 81458][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 1 mS
+[ 81463][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 81469][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 81478][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 81484][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 81490][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 81492][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81492,491,5,10,00,0B,B7,76
+[ 81502][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 81508][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 81513][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 81523][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 81528][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 81534][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 81540][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 81545][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 81551][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 81560][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 81566][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 81659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81659,43A,5,10,00,00,33,1E
+[ 81669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81669,44A,5,10,00,00,00,00
+[ 81679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81679,45A,5,10,00,00,00,00
+[ 81689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81689,47A,5,10,00,00,03,E8
+[ 81699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81699,48A,5,10,FF,FF,FF,FF
+[ 81790][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81790,4A3,3,12,00,39
+[ 81807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81807,353,2,01,00
+[ 81807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 81807,353,2,02,00
+[ 82230][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82230,43B,5,10,00,00,35,DC
+[ 82240][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82240,44B,5,10,00,00,00,00
+[ 82250][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82250,45B,5,10,00,00,00,00
+[ 82260][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82260,47B,5,10,00,00,03,DB
+[ 82270][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82270,48B,5,10,FF,FF,FF,FF
+[ 82532][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82532,421,5,01,00,00,00,49
+[ 82555][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82555,421,5,02,00,00,00,46
+[ 82578][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82578,421,5,07,7F,FF,FF,FF
+[ 82601][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82600,421,5,03,00,00,00,65
+[ 82623][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82623,421,5,05,00,00,00,71
+[ 82646][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82646,421,5,06,00,00,00,0A
+[ 82659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82659,43A,5,10,00,00,33,1E
+[ 82669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82669,44A,5,10,00,00,00,00
+[ 82669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82669,421,5,04,00,00,00,57
+[ 82679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82679,45A,5,10,00,00,00,00
+[ 82689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82689,47A,5,10,00,00,03,E8
+[ 82699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82699,48A,5,10,FF,FF,FF,FF
+[ 82961][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82961,423,5,01,00,00,00,5D
+[ 82975][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 82975,423,5,02,00,00,00,5F
+[ 83223][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83223,43B,5,10,00,00,35,DB
+[ 83233][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83233,45B,5,10,00,00,00,00
+[ 83243][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83243,47B,5,10,00,00,03,DB
+[ 83253][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83253,48B,5,10,FF,FF,FF,FF
+[ 83255][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83255,351,2,01,01
+[ 83265][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83265,351,2,02,01
+[ 83337][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83337,423,5,03,00,00,00,4E
+[ 83436][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 83436][I][mapper.cpp:308] mapper_do(): [MPR] init -> 0 mS
+[ 83659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83659,43A,5,10,00,00,33,1E
+[ 83669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83669,44A,5,10,00,00,00,00
+[ 83679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83679,45A,5,10,00,00,00,00
+[ 83689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83689,47A,5,10,00,00,03,E8
+[ 83699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83699,48A,5,10,FF,FF,FF,FF
+[ 83796][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83796,4A3,3,12,00,39
+[ 83809][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83809,353,2,01,00
+[ 83809][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 83809,353,2,02,00
+[ 84217][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84217,43B,5,10,00,00,35,DC
+[ 84226][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84226,44B,5,10,00,00,00,00
+[ 84236][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84236,45B,5,10,00,00,00,00
+[ 84246][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84246,47B,5,10,00,00,03,DB
+[ 84256][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84256,48B,5,10,FF,FF,FF,FF
+[ 84659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84659,43A,5,10,00,00,33,1E
+[ 84669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84669,44A,5,10,00,00,00,00
+[ 84679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84679,45A,5,10,00,00,00,00
+[ 84689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84689,47A,5,10,00,00,03,E8
+[ 84699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 84699,48A,5,10,FF,FF,FF,FF
+[ 85210][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85210,43B,5,10,00,00,35,DB
+[ 85220][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85220,44B,5,10,00,00,00,00
+[ 85230][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85230,45B,5,10,00,00,00,00
+[ 85250][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85250,351,2,01,01
+[ 85260][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85260,351,2,02,01
+[ 85460][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/ping'
+[ 85461][I][mapper.cpp:308] mapper_do(): [MPR] init -> 1 mS
+[ 85463][I][mapper.cpp:294] mapper_do(): [MPR] From topic 'mqttmapper/time'
+[ 85468][I][mapper.cpp:308] mapper_do(): [MPR] init -> 5 mS
+[ 85473][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 85479][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 85485][I][mapper.cpp:440] mapper_do(): [MPR] %s templ -> 0 mS
+[ 85490][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 85496][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/salon/command' = 'p0b3.text=11:16' (salon p*: time)
+[ 85505][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 85511][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 85517][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 85522][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 85528][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 85533][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/truma/command' = 'p0b3.text=11:16' (truma p*: time)
+[ 85543][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 10 mS
+[ 85548][I][mapper.cpp:315] mapper_do(): [MPR] find mapping -> 0 mS
+[ 85554][I][mapper.cpp:334] mapper_do(): [MPR] trim -> 0 mS
+[ 85559][I][mapper.cpp:448] mapper_do(): [MPR] ! templ -> 0 mS
+[ 85565][I][mapper.cpp:598] mapper_do(): [MPR] prep send -> 0 mS
+[ 85571][I][mapper.cpp:603] mapper_do(): [MPR] To 'hasp/driver/command' = 'p0b3.text=11:16' (driver p*: time)
+[ 85580][I][mapper.cpp:632] mapper_do(): [MPR] sent -> 9 mS
+[ 85586][I][mapper.cpp:645] mapper_do(): [MPR] END -> 0 mS
+[ 85659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85659,43A,5,10,00,00,33,1E
+[ 85669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85669,44A,5,10,00,00,00,00
+[ 85679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85679,45A,5,10,00,00,00,00
+[ 85689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85689,47A,5,10,00,00,03,E8
+[ 85699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85699,48A,5,10,FF,FF,FF,FF
+[ 85754][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85754,45C,5,31,00,00,00,13
+[ 85763][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85763,46C,5,32,00,00,00,12
+[ 85773][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85773,45C,5,33,00,00,00,3D
+[ 85791][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85791,4A3,3,12,00,39
+[ 85807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85807,353,2,01,00
+[ 85807][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 85807,353,2,02,00
+[ 86173][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86173,433,3,55,09,84
+[ 86203][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86203,43B,5,10,00,00,35,DB
+[ 86213][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86213,44B,5,10,00,00,00,00
+[ 86223][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86223,45B,5,10,00,00,00,00
+[ 86233][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86233,47B,5,10,00,00,03,DB
+[ 86243][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86243,48B,5,10,FF,FF,FF,FF
+[ 86536][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86536,421,5,01,00,00,00,49
+[ 86559][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86559,421,5,02,00,00,00,46
+[ 86582][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86582,421,5,07,7F,FF,FF,FF
+[ 86605][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86605,421,5,03,00,00,00,66
+[ 86628][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86628,421,5,05,00,00,00,71
+[ 86650][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86650,421,5,06,00,00,00,0A
+[ 86659][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86659,43A,5,10,00,00,33,1E
+[ 86669][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86669,44A,5,10,00,00,00,00
+[ 86673][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86673,421,5,04,00,00,00,57
+[ 86679][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86679,45A,5,10,00,00,00,00
+[ 86689][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86689,47A,5,10,00,00,03,E8
+[ 86699][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86699,48A,5,10,FF,FF,FF,FF
+[ 86751][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86751,46C,5,30,00,00,00,03
+[ 86761][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86761,45C,5,31,00,00,00,13
+[ 86771][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86771,46C,5,32,00,00,00,12
+[ 86781][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86781,45C,5,33,00,00,00,3D
+[ 86954][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86954,423,5,01,00,00,00,5D
+[ 86968][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 86968,423,5,02,00,00,00,5F
+[ 87197][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 87197,43B,5,10,00,00,35,DC
+[ 87206][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 87206,44B,5,10,00,00,00,00
+[ 87216][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 87216,45B,5,10,00,00,00,00
+[ 87226][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 87226,47B,5,10,00,00,03,DB
+[ 87236][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 87236,48B,5,10,FF,FF,FF,FF
+[ 87254][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 87254,351,2,01,01
+[ 87264][I][canbus.cpp:55] listenToCanTask(): [CANLOG] 87264,351,2,02,01
+---- Closed the serial port /dev/tty.usbserial-10 ----
+

@@ -1,0 +1,12 @@
+print( "WRENCH test\n" ); 
+//for( i=0; i<10; i++ ) 
+//{ 
+//    print( i, " * 3.14 = ", i*3.14, "\n" );
+//}";
+//msg::write("name", 12);
+
+str::printf( "%d", mpr::geti("namei") );
+str::printf( "%f", mpr::getf("namef") );
+str::printf( "%f", 12.45 );
+str::printf( "%s", "12.456A" );
+str::printf( "%d", 12 );
